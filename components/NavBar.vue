@@ -61,15 +61,19 @@
                   class="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-[#1b3664]"
                 ></div>
               </div>
-              <li class="p-4 text-[#1b3664] hover:bg-gray-300">Our History</li>
               <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                Our Leadership
+                <NuxtLink to="/history">Our History</NuxtLink>
               </li>
               <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                Our Commitment to Health and Safety
+                <NuxtLink to="/leadership">Our Leadership</NuxtLink>
               </li>
               <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                Our Dedication to Quality
+                <NuxtLink to="/health-safety"
+                  >Our Commitment to Health and Safety</NuxtLink
+                >
+              </li>
+              <li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                <NuxtLink to="/quality">Our Dedication to Quality</NuxtLink>
               </li>
             </ul>
           </div>

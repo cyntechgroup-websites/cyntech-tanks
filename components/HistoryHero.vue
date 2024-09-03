@@ -15,7 +15,7 @@
       class="w-full md:w-1/2 px-10 pt-10 pb-10 min-h-[200px] mx-auto flex justify-center flex-col"
     >
       <h2 class="text-[#1b3664] text-3xl md:text-4xl font-semibold text-center">
-        Our Leadership
+        Our History
       </h2>
     </article>
   </section>

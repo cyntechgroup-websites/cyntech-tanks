@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-1 pb-8 px-6 md:px-14 md:pt-14">
+  <section class="pt-8 pb-8 px-6 md:px-14 md:pt-14">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-2xl font-medium text-[#1b3664] mb-4 md:text-3xl">
         Our Projects
@@ -25,7 +25,7 @@
           class="border-b-2 border-gray-200 block md:hover:scale-105 transition-all duration-150 ease-in-out md:hover:border-gray-400"
         >
           <img
-            src="https://picsum.photos/600/400"
+            src="/public/images/tank-cleaning.webp"
             alt="Project 1"
             class="w-full object-cover mb-4"
           />

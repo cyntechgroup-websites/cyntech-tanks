@@ -19,7 +19,7 @@
       <h2 class="text-[#fdc70c] text-3xl md:text-4xl font-semibold mb-4">
         About Us
       </h2>
-      <p class="text-white text-xl lg:text-2xl font-light">
+      <p class="text-white text-xl lg:text-2xl font-light leading-relaxed">
         Since 1981, Cyntech has been providing innovative and cost-effective
         solutions to the energy and petro-chemical industry.
       </p>

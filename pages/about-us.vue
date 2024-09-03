@@ -45,14 +45,14 @@
             </NuxtLink>
 
             <NuxtLink
-              to="/about-us#history"
+              to="/history"
               class="block p-2 pl-7 text-[#1b3664] hover:bg-gray-100 border-t relative"
               :class="{
-                'bg-gray-100 font-semibold pl-6': isActive('/about-us#history'),
+                'bg-gray-100 font-semibold pl-6': isActive('/history'),
               }"
             >
               <span
-                v-if="isActive('/about-us#history')"
+                v-if="isActive('/history')"
                 class="absolute left-1 top-1/2 transform -translate-y-1/2"
               >
                 <svg
@@ -89,16 +89,16 @@
             </NuxtLink>
 
             <NuxtLink
-              to="/about-us#health-safety"
+              to="/health-safety"
               class="block p-2 pl-7 text-[#1b3664] hover:bg-gray-100 border-t relative"
               :class="{
                 'bg-gray-100 font-semibold pl-6': isActive(
-                  '/about-us#health-safety'
+                  '/health-safety'
                 ),
               }"
             >
               <span
-                v-if="isActive('/about-us#health-safety')"
+                v-if="isActive('/health-safety')"
                 class="absolute left-1 top-1/2 transform -translate-y-1/2"
               >
                 <svg
@@ -113,14 +113,14 @@
             </NuxtLink>
 
             <NuxtLink
-              to="/about-us#quality"
+              to="/quality"
               class="block p-2 pl-7 text-[#1b3664] hover:bg-gray-100 border-t relative"
               :class="{
-                'bg-gray-100 font-semibold pl-6': isActive('/about-us#quality'),
+                'bg-gray-100 font-semibold pl-6': isActive('/quality'),
               }"
             >
               <span
-                v-if="isActive('/about-us#quality')"
+                v-if="isActive('/quality')"
                 class="absolute left-1 top-1/2 transform -translate-y-1/2"
               >
                 <svg
