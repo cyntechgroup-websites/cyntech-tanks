@@ -43,7 +43,7 @@
           >
             <NuxtLink to="/about-us" class="flex items-center">
               <button class="text-[#1b3664] flex items-center">
-                About us
+                About Us
                 <Icon icon="lucide:chevron-down" class="ml-1 mt-0.5 h-5 w-5" />
               </button>
             </NuxtLink>
@@ -78,10 +78,12 @@
             @mouseleave="toggleSubMenu('')"
             class="relative"
           >
-            <button class="text-[#1b3664] flex items-center">
-              Our Services
-              <Icon icon="lucide:chevron-down" class="ml-1 mt-0.5 h-5 w-5" />
-            </button>
+            <NuxtLink to="/our-services" class="flex items-center">
+              <button class="text-[#1b3664] flex items-center">
+                Our Services
+                <Icon icon="lucide:chevron-down" class="ml-1 mt-0.5 h-5 w-5" />
+              </button>
+            </NuxtLink>
             <div
               v-if="subMenu === 'services'"
               class="absolute w-full h-6 bg-transparent"
@@ -210,28 +212,30 @@
     >
       <ul v-if="subMenu === ''" class="flex flex-col border-t border-gray-400">
         <li class="border-b border-gray-400">
-          <button
-            @click="toggleSubMenu('about')"
-            class="flex justify-between items-center w-full"
-          >
-            <span class="pl-4 py-4 text-[#1b3664]">About Us</span>
-            <Icon
-              icon="lucide:chevron-right"
-              class="text-[#1b3664] bg-slate-300 w-14 h-14 p-4"
-            />
-          </button>
+          <div class="flex justify-between items-center w-full">
+            <NuxtLink to="/about-us" class="pl-4 py-4 text-[#1b3664]">
+              About Us
+            </NuxtLink>
+            <button
+              @click="toggleSubMenu('about')"
+              class="text-[#1b3664] bg-slate-300 w-14 h-14 flex items-center justify-center text-center"
+            >
+              <Icon icon="lucide:chevron-right" class="w-14 h-14 p-[15px]" />
+            </button>
+          </div>
         </li>
         <li class="border-b border-gray-400">
-          <button
-            @click="toggleSubMenu('services')"
-            class="flex justify-between items-center w-full"
-          >
-            <span class="pl-4 py-4 text-[#1b3664]">Our Services</span>
-            <Icon
-              icon="lucide:chevron-right"
-              class="text-[#1b3664] bg-slate-300 w-14 h-14 p-4"
-            />
-          </button>
+          <div class="flex justify-between items-center w-full">
+            <NuxtLink to="/our-services" class="pl-4 py-4 text-[#1b3664]">
+              Our Services
+            </NuxtLink>
+            <button
+              @click="toggleSubMenu('services')"
+              class="text-[#1b3664] bg-slate-300 w-14 h-14 flex items-center justify-center text-center"
+            >
+              <Icon icon="lucide:chevron-right" class="w-14 h-14 p-[15px]" />
+            </button>
+          </div>
         </li>
         <li class="border-b border-gray-400 p-4">
           <span class="text-[#1b3664]">Projects</span>

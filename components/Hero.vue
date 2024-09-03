@@ -30,11 +30,13 @@
             cleaning, inspection, engineering, mechanical and structural
             services for storage tanks and storage infrastructure.
           </p>
-          <button
-            class="px-6 py-3 bg-white text-[#1b3664] font-normal text-base md:hover:bg-gray-200"
-          >
-            About Us
-          </button>
+          <NuxtLink to="/about-us">
+            <button
+              class="px-6 py-3 bg-white text-[#1b3664] font-normal text-base md:hover:bg-gray-200"
+            >
+              About Us
+            </button>
+          </NuxtLink>
         </article>
       </section>
 
@@ -63,11 +65,13 @@
             storage tank services to the energy and petrochemical, pipeline, and
             construction industries.
           </p>
-          <button
-            class="px-6 py-3 bg-white text-[#1b3664] font-normal text-base md:hover:bg-gray-200"
-          >
-            Read More
-          </button>
+          <NuxtLink to="/our-services">
+            <button
+              class="px-6 py-3 bg-white text-[#1b3664] font-normal text-base md:hover:bg-gray-200"
+            >
+              Read More
+            </button>
+          </NuxtLink>
         </article>
       </section>
     </div>

@@ -18,8 +18,8 @@
               Learn more about the company, our history, and our commitment to
               health and safety.
             </p>
-            <a
-              href="#"
+            <NuxtLink
+              to="/about-us"
               class="text-[#1b3664] font-normal flex items-center space-x-2"
             >
               <span>Learn more</span>
@@ -27,7 +27,7 @@
                 class="text-xl md:group-hover:translate-x-4 transition-transform duration-300 ease-in-out"
                 >→</span
               >
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -49,8 +49,8 @@
               We are able to tap into a wealth of experience to offer
               industry-leading solutions.
             </p>
-            <a
-              href="#"
+            <NuxtLink
+              to="/our-services"
               class="text-[#1b3664] font-normal flex items-center space-x-2"
             >
               <span>Learn more</span>
@@ -58,7 +58,7 @@
                 class="text-xl md:group-hover:translate-x-4 transition-transform duration-300 ease-in-out"
                 >→</span
               >
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>

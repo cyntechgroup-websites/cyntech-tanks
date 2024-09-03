@@ -18,8 +18,8 @@
               Meet some of the people responsible for keeping us at the
               forefront of the industry year after year.
             </p>
-            <a
-              href="#"
+            <NuxtLink
+              to="/leadership"
               class="text-[#1b3664] font-normal flex items-center space-x-2"
             >
               <span>Learn more</span>
@@ -27,7 +27,7 @@
                 class="text-xl md:group-hover:translate-x-4 transition-transform duration-300 ease-in-out"
                 >→</span
               >
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>

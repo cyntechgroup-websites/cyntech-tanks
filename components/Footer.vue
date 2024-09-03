@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-200 text-center py-6">
+  <footer class="bg-gray-200 text-center py-6 mt-auto border-t border-gray-300">
     <div class="max-w-lg mx-auto">
       <img
         src="/public/images/cyntech-tanks-logo.svg"
@@ -41,9 +41,3 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 </script>
-
-<style scoped>
-footer {
-  border-top: 1px solid #e5e7eb;
-}
-</style>
