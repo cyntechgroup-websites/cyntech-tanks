@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-[#F8F9FA] shadow-md z-50 relative">
+  <header class="bg-[#F8F9FA] shadow-md z-70 relative">
     <div
       class="hidden lg:flex justify-end items-center bg-[#1b3664] text-[#F8F9FA] px-12 text-sm"
     >
@@ -35,7 +35,7 @@
           </NuxtLink>
         </article>
 
-        <nav class="hidden lg:flex space-x-8">
+        <nav class="hidden lg:flex space-x-8 z-40">
           <div
             @mouseenter="toggleSubMenu('about')"
             @mouseleave="toggleSubMenu('')"
@@ -116,7 +116,7 @@
               </li>
             </ul>
           </div>
-          <div><button class="text-[#1b3664]">Projects</button></div>
+          <div><NuxtLink to="/our-projects" class="flex items-center"><button class="text-[#1b3664]">Projects</button></NuxtLink></div>
           <div><button class="text-[#1b3664]">Gallery</button></div>
           <div><button class="text-[#1b3664]">Careers</button></div>
         </nav>
@@ -212,7 +212,7 @@
   <transition name="slide-down">
     <nav
       v-if="menuOpen"
-      class="absolute top-[4.5rem] w-full bg-white shadow-md z-40 lg:hidden"
+      class="absolute top-[4.5rem] w-full bg-white shadow-md z-50 lg:hidden"
     >
       <ul v-if="subMenu === ''" class="flex flex-col border-t border-gray-400">
         <li class="border-b border-gray-400">

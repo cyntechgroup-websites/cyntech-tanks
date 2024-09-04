@@ -1,8 +1,8 @@
 <template>
   <section
-    class="flex flex-col md:flex-row-reverse items-center bg-gray-200 h-auto max-h-[200px]"
+    class="flex flex-col md:flex-row-reverse items-center bg-gray-200 h-auto max-h-[250px]"
   >
-    <article class="hidden md:relative md:block w-full md:w-1/2 h-[200px]">
+    <article class="hidden md:relative md:block w-full md:w-1/2 h-[250px]">
       <img
         src="https://picsum.photos/600/400"
         alt="Slide 1 Image"

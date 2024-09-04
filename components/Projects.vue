@@ -26,7 +26,7 @@
         >
           <img
             src="/public/images/tank-cleaning.webp"
-            alt="Project 1"
+            alt="Tank Cleaning"
             class="w-full object-cover mb-4"
           />
           <h3 class="text-xl font-bold text-[#1b3664]">Tank Cleaning</h3>
@@ -41,8 +41,8 @@
           class="border-b-2 border-gray-200 block md:hover:scale-105 transition-all duration-150 ease-in-out md:hover:border-gray-400"
         >
           <img
-            src="https://picsum.photos/600/400"
-            alt="Project 2"
+            src="/public/images/tank-shell-replacement.webp"
+            alt="Tank Shell Replacement"
             class="w-full object-cover mb-4"
           />
           <h3 class="text-xl font-bold text-[#1b3664]">

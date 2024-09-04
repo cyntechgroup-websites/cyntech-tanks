@@ -2,7 +2,7 @@
   <section class="flex flex-col py-12 px-6 md:px-14 justify-center">
     <h1 class="mx-auto text-center font-medium text-xl text-[#1b3664] mb-10 bg-[#fdc70c] p-4 px-28 mt-1.5">Our Leadership Team</h1>
     <div
-      class="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-fr"
+      class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-fr"
     >
       <article class="group">
         <header>
@@ -56,7 +56,7 @@
               Travis Fedirko
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
-              Operations Manager
+              Operations Manager TEST TEST TESST TEST TEST TEST TEST 
             </p>
             <footer>
               <a

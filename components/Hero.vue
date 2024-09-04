@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#FFC107]">
+  <div class="bg-[#FFC107] z-10">
     <section class="relative overflow-hidden max-w-[1400px] mx-auto">
       <div
         class="flex transition-transform duration-700 ease-in-out h-full -mb-1"
@@ -21,7 +21,7 @@
           </article>
 
           <article
-            class="flex flex-col w-full md:w-1/2 px-8 pt-16 pb-10 min-h-[380px] md:min-h-[420px] md:max-w-[400px] mx-auto justify-center"
+            class="flex flex-col w-full md:w-1/2 px-8 pt-20 pb-0 md:pb-20 md:min-h-[420px] md:max-w-[400px] mx-auto justify-center align-middle h-full"
           >
             <h2 class="text-[#1b3664] text-3xl md:text-4xl font-semibold mb-4">
               Who We Are
@@ -56,7 +56,7 @@
           </article>
 
           <article
-            class="flex flex-col w-full md:w-1/2 px-8 pt-16 pb-10 min-h-[380px] md:min-h-[420px] md:max-w-[400px] mx-auto justify-center"
+            class="flex flex-col w-full md:w-1/2 px-8 pt-20 pb-0 md:pb-20 md:min-h-[420px] md:max-w-[400px] mx-auto justify-center align-middle h-full"
           >
             <h2 class="text-[#1b3664] text-3xl md:text-4xl font-semibold mb-4">
               What We Do
@@ -77,7 +77,7 @@
         </section>
       </div>
 
-      <div class="md:hidden flex justify-center mb-4 -translate-y-[365px] mt-6">
+      <div class="md:hidden flex justify-center mb-4 mt-6 py-4">
         <div
           class="w-12 h-1 mx-1 cursor-pointer"
           :class="currentSlide === 1 ? 'bg-[#1b3664]' : 'bg-white'"
