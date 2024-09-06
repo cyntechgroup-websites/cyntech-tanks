@@ -9,7 +9,11 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '450px',
+      },
+    },
   },
   plugins: [],
 }

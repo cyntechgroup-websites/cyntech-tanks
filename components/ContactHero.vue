@@ -6,7 +6,7 @@
       >
         <article class="hidden md:relative md:block w-full md:w-1/2 h-[250px]">
           <img
-            src="https://picsum.photos/600/400"
+            src="/images/contact-hero.jpg"
             alt="Slide 1 Image"
             class="w-full h-full object-cover"
           />

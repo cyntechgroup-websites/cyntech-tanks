@@ -8,7 +8,7 @@
           class="relative w-full md:w-1/2 h-[300px] md:h-[400px] lg:h-[500px]"
         >
           <img
-            src="https://picsum.photos/600/400"
+            src="/images/career-hero.jpg"
             alt="Slide 1 Image"
             class="w-full h-full object-cover"
           />
@@ -21,8 +21,8 @@
           <h2 class="text-[#fdc70c] text-3xl md:text-4xl font-semibold mb-4">
             Careers
           </h2>
-          <p class="text-white text-xl lg:text-2xl font-light leading-relaxed">
-            Not only do we provide a challenging environment for our people to exercise their skills, but we invest in their professional and personal development and offer reward and benefit packages that demonstrate our loyalty to our people. Check out our positions and requirements below, and if you would like to be part of the Cyntech Tanks team, send us your resume.
+          <p class="text-white text-lg lg:text-2xl font-light leading-relaxed">
+            Not only do we provide a challenging environment for our people to exercise their skills, but we invest in their professional and personal development and offer reward and benefit packages that demonstrate our loyalty to our people.
           </p>
         </article>
       </section>

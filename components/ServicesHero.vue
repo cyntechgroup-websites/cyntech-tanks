@@ -8,7 +8,7 @@
           class="relative w-full md:w-1/2 h-[300px] md:h-[400px] lg:h-[500px]"
         >
           <img
-            src="https://picsum.photos/600/400"
+            src="/images/tank-shell-replacement.webp"
             alt="Slide 1 Image"
             class="w-full h-full object-cover"
           />

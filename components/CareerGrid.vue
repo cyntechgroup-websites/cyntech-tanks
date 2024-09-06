@@ -1,12 +1,20 @@
 <template>
-  <section class="flex flex-col py-12 px-6 md:px-14 justify-center lg:min-w-full mb-8">
-    <div class="flex justify-start">
+  <section
+    class="flex flex-col py-12 px-6 md:px-14 justify-center lg:min-w-full mb-8"
+  >
+    <div class="flex flex-col max-w-7xl mx-auto px-6 mb-14">
+      <h2 class="text-2xl mb-8 text-gray-700">
+        Check out our positions and requirements below, and if you would like to
+        be part of the Cyntech Tanks team, send us your resume.
+      </h2>
+      <div class="flex justify-start">
         <button
-          class="bg-[#1b3664] text-white px-6 py-3 mb-12 md:mb-8 md:hover:bg-gray-200 md:hover:text-[#1b3664] md:hover:border-[#1b3664] md:border-[#1b3664] md:border-2"
+          class="bg-[#1b3664] text-white px-6 py-3 md:hover:bg-gray-200 md:hover:text-[#1b3664] md:hover:border-[#1b3664] md:border-[#1b3664] md:border-2"
         >
           Send Us Your Resume
         </button>
       </div>
+    </div>
     <div
       class="grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-fr mx-auto justify-center"
     >
@@ -22,7 +30,8 @@
               General Laborer
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
-              Labourer position for our Aboveground Storage Tank Repair projects.
+              Labourer position for our Aboveground Storage Tank Repair
+              projects.
             </p>
             <footer>
               <a
@@ -52,7 +61,8 @@
               Safety Advisor
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
-              Role for keeping the company abreast of changes in safety laws and regulations.
+              Role for keeping the company abreast of changes in safety laws and
+              regulations.
             </p>
             <footer>
               <a
@@ -69,7 +79,6 @@
           </div>
         </section>
       </article>
-
 
       <article class="group lg:w-[420px]">
         <section
@@ -83,7 +92,8 @@
               Site Supervisor
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
-              Site Supervisor Position for our Aboveground Storage Tank Repair projects.
+              Site Supervisor Position for our Aboveground Storage Tank Repair
+              projects.
             </p>
             <footer>
               <a
@@ -100,7 +110,6 @@
           </div>
         </section>
       </article>
-
 
       <article class="group lg:w-[420px]">
         <section
@@ -204,7 +213,8 @@
               Vacuum Truck Operator
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
-              Vacuum truck operator position for our Aboveground Storage Tank Cleaning projects.
+              Vacuum truck operator position for our Aboveground Storage Tank
+              Cleaning projects.
             </p>
             <footer>
               <a
@@ -221,7 +231,6 @@
           </div>
         </section>
       </article>
-
     </div>
   </section>
 </template>
