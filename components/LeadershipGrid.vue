@@ -1,10 +1,10 @@
 <template>
-  <section class="flex flex-col py-12 px-6 md:px-14 justify-center">
-    <h1 class="mx-auto text-center font-medium text-xl text-[#1b3664] mb-10 bg-[#fdc70c] p-4 px-28 mt-1.5">Our Leadership Team</h1>
+  <section class="flex flex-col py-12 px-6 md:px-14 justify-center lg:min-w-full">
+    <h1 class="max-w-7xl mx-auto lg:w-full text-center font-medium text-2xl text-[#1b3664] mb-14 bg-[#fdc70c] p-4 px-28 mt-1.5">Our Leadership Team</h1>
     <div
-      class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-fr"
+      class="grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-fr mx-auto lg:mx-0"
     >
-      <article class="group">
+      <article class="group lg:w-[420px]">
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] mb-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -39,7 +39,7 @@
         </section>
       </article>
 
-      <article class="group">
+      <article class="group lg:w-[420px]">
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] mb-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -56,7 +56,7 @@
               Travis Fedirko
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
-              Operations Manager TEST TEST TESST TEST TEST TEST TEST 
+              Operations Manager 
             </p>
             <footer>
               <a
@@ -74,7 +74,7 @@
         </section>
       </article>
 
-      <article class="group">
+      <article class="group lg:w-[420px]">
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] mb-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -109,7 +109,7 @@
         </section>
       </article>
 
-      <article class="group">
+      <article class="group lg:w-[420px]">
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] mb-4 translate-x-10 md:group-hover:bg-[#1b3664]"

@@ -11,11 +11,12 @@
         us—what drives us is sharing in our client's satisfaction of a job well
         done.
       </p>
+      
       <div class="flex justify-start md:justify-end">
         <button
           class="bg-white text-[#1b3664] border border-gray-300 px-6 py-3 mb-12 md:mb-8 md:hover:bg-gray-200"
         >
-          View all projects
+          View Our Gallery
         </button>
       </div>
 

@@ -8,29 +8,32 @@
       <AboutSideNav />
       <article>
         <section class="flex flex-col py-12 pb-4 px-10 md:px-10 justify-center">
-          <h2 class="text-2xl text-gray-700 font-light leading-relaxed">
+          <h2 class="text-2xl mb-8 text-gray-700">
             With hard work and an entrepreneurial mindset, we have grown to
             become a global leader for helical pile foundations, helical rigid
-            inclusions, and pipeline anchors. With a wealth of experience and
+            inclusions, and pipeline anchors. 
+          </h2>
+          <h3 class="text-xl text-gray-500">
+            With a wealth of experience and
             the drive to go above and beyond, we continue to develop through
             innovation and by continuing to provide quality service to clients
             across the globe.
-          </h2>
+          </h3>
         </section>
         <section class="max-w-6xl mx-auto px-10 py-10">
           <!-- 1981 -->
           <div class="flex flex-col md:flex-row mb-8">
             <img
-              src="https://picsum.photos/200/150"
+              src="/public/images/1981.webp"
               alt="Image for 1981"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664]"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
                 <h3 class="text-[#1b3664] font-bold text-3xl mb-2">1981</h3>
                 <div class="ml-4 flex-grow h-0.5 bg-[#fdc70c]"></div>
               </div>
-              <p class="text-[#1b3664]">
+              <p class="text-gray-700 leading-relaxed font-light">
                 Cyntech started in 1981 as a small, client-focused company
                 within the Alberta energy sector.
               </p>
@@ -40,16 +43,16 @@
           <!-- 1997 -->
           <div class="flex flex-col md:flex-row mb-8">
             <img
-              src="https://picsum.photos/200/150"
+              src="/public/images/1997.webp"
               alt="Image for 1997"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664]"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
                 <h3 class="text-[#1b3664] font-bold text-3xl mb-2">1997</h3>
                 <div class="ml-4 flex-grow h-0.5 bg-[#fdc70c]"></div>
               </div>
-              <p class="text-[#1b3664]">
+              <p class="text-gray-700 leading-relaxed font-light">
                 Cyntech establishes three divisions - helical piles, pipeline
                 anchors, and tank services.
               </p>
@@ -59,16 +62,16 @@
           <!-- 2007 -->
           <div class="flex flex-col md:flex-row mb-8">
             <img
-              src="https://picsum.photos/200/150"
+              src="/public/images/2007.webp"
               alt="Image for 2007"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664]"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
                 <h3 class="text-[#1b3664] font-bold text-3xl mb-2">2007</h3>
                 <div class="ml-4 flex-grow h-0.5 bg-[#fdc70c]"></div>
               </div>
-              <p class="text-[#1b3664]">
+              <p class="text-gray-700 leading-relaxed font-light">
                 Cyntech builds a fabrication facility and head office in
                 Calgary, Alberta.
               </p>
@@ -78,16 +81,16 @@
           <!-- 2010 -->
           <div class="flex flex-col md:flex-row mb-8">
             <img
-              src="https://picsum.photos/200/150"
+              src="/public/images/2010.webp"
               alt="Image for 2010"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664] p-8 md:p-4"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
                 <h3 class="text-[#1b3664] font-bold text-3xl mb-2">2010</h3>
                 <div class="ml-4 flex-grow h-0.5 bg-[#fdc70c]"></div>
               </div>
-              <p class="text-[#1b3664]">
+              <p class="text-gray-700 leading-relaxed font-light">
                 Recognized in 2010 by Alberta Venture Magazine as one of
                 Alberta's top 25 fastest growing companies over $20 million,
                 Cyntech has since grown to become a relevant player in both the
@@ -99,16 +102,16 @@
           <!-- 2013 -->
           <div class="flex flex-col md:flex-row mb-8">
             <img
-              src="https://picsum.photos/200/150"
+              src="/public/images/2013.webp"
               alt="Image for 2013"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 border-4 border-[#1b3664] p-12 md:p-4 object-contain"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
                 <h3 class="text-[#1b3664] font-bold text-3xl mb-2">2013</h3>
                 <div class="ml-4 flex-grow h-0.5 bg-[#fdc70c]"></div>
               </div>
-              <p class="text-[#1b3664]">
+              <p class="text-gray-700 leading-relaxed font-light">
                 In July 2013, Keller Group plc acquired Cyntech Corporation as
                 part of the acquisition of North American Caisson Ltd. (a
                 division of North American Construction Group - NACG). Through
@@ -123,16 +126,16 @@
           <!-- 2021 -->
           <div class="flex flex-col md:flex-row mb-8">
             <img
-              src="https://picsum.photos/200/150"
+              src="/public/images/2021.webp"
               alt="Image for 2021"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664] p-8 md:p-4"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
                 <h3 class="text-[#1b3664] font-bold text-3xl mb-2">2021</h3>
                 <div class="ml-4 flex-grow h-0.5 bg-[#fdc70c]"></div>
               </div>
-              <p class="text-[#1b3664]">
+              <p class="text-gray-700 leading-relaxed font-light">
                 Cyntech's helical pile and pipeline anchoring division completes
                 Management Buyout from Keller and becomes Cyntech Group.
               </p>

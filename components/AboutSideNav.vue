@@ -29,7 +29,7 @@
   </article>
 
   <article class="px-4 lg:pr-0 lg:pl-8 hidden lg:block">
-    <div class="relative min-w-[220px] max-w-[500px] mx-auto lg:mt-14 z-30">
+    <div class="relative min-w-[230px] max-w-[500px] mx-auto lg:mt-14 z-30">
       <div class="absolute w-full bg-white mt-2 z-10">
         <NuxtLink
           v-for="link in links"

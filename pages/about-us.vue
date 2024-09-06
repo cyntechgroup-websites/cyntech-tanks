@@ -2,11 +2,11 @@
   <div>
     <AboutHero />
     <div class="border-b-2 max-w-[1150px] mx-auto min-h-2 pt-12 px-6"></div>
-    <section class="flex flex-col mt-10 lg:mt-0 lg:flex-row justify-center">
+    <section class="flex flex-col mt-10 lg:mt-0 lg:flex-row justify-center max-w-7xl mx-auto">
       <AboutSideNav />
       <article>
         <div
-          class="flex flex-col max-w-[1200px] mx-auto mt-4 pt-6 px-6 md:px-[55px]"
+          class="flex flex-col max-w-7xl mx-auto mt-4 pt-6 px-6 md:px-10"
         >
           <h2 class="text-2xl mb-8 text-gray-700">
             Cyntech has built a solid reputation throughout North America as an
@@ -21,7 +21,7 @@
         </div>
         <AboutLearnMore />
         <div
-          class="flex flex-col max-w-[1200px] mx-auto pt-4 px-6 md:px-[55px] mb-12"
+          class="flex flex-col max-w-7xl mx-auto pt-4 px-6 md:px-10 mb-12"
         >
           <h2 class="text-2xl mb-8 text-[#1b3664] font-semibold">
             Why Choose Us?
