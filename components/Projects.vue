@@ -13,16 +13,18 @@
       </p>
       
       <div class="flex justify-start md:justify-end">
+        <NuxtLink to="/gallery">
         <button
           class="bg-white text-[#1b3664] border border-gray-300 px-6 py-3 mb-12 md:mb-8 md:hover:bg-gray-200"
         >
           View Our Gallery
         </button>
+        </NuxtLink>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <a
-          href="project-link-1"
+          href="/gallery"
           class="border-b-2 border-gray-200 block md:hover:scale-105 transition-all duration-150 ease-in-out md:hover:border-gray-400"
         >
           <img
@@ -38,7 +40,7 @@
         </a>
 
         <a
-          href="project-link-2"
+          href="/gallery"
           class="border-b-2 border-gray-200 block md:hover:scale-105 transition-all duration-150 ease-in-out md:hover:border-gray-400"
         >
           <img
