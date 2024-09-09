@@ -40,6 +40,10 @@
       </article>
 
       <article class="group">
+        <a
+                href="/tank-foundations"
+              >
+        
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] mb-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -61,8 +65,7 @@
               safely and efficiently.
             </p>
             <footer>
-              <a
-                href="#"
+              <div
                 class="text-[#1b3664] font-normal flex items-center space-x-2"
               >
                 <span>Learn more</span>
@@ -70,10 +73,11 @@
                   class="text-xl md:group-hover:translate-x-4 transition-transform duration-300 ease-in-out"
                   >→</span
                 >
-              </a>
+              </div>
             </footer>
           </div>
         </section>
+      </a>
       </article>
 
       <article class="group">
