@@ -1,9 +1,20 @@
 <template>
   <section class="pt-8 pb-8 px-6 md:px-14 md:pt-14">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl font-medium text-[#1b3664] mb-4 md:text-3xl">
+      <div class="flex justify-between items-center mb-8">
+      <h2 class="font-medium text-[#1b3664] text-3xl">
         Our Projects
       </h2>
+      <div class="md:flex justify-center items-center hidden">
+        <NuxtLink to="/gallery">
+        <button
+          class="bg-white text-[#1b3664] border border-gray-300 px-6 py-3 md:hover:bg-gray-200"
+        >
+          View Our Gallery
+        </button>
+        </NuxtLink>
+      </div>
+    </div>
       <p class="text-lg text-gray-600 mb-8 md:text-xl font-light">
         Whether large or small, complex or simple, we take the time to
         understand every subsurface problem and provide the optimal,
@@ -11,11 +22,11 @@
         us—what drives us is sharing in our client's satisfaction of a job well
         done.
       </p>
-      
-      <div class="flex justify-start md:justify-end">
+
+      <div class="flex justify-start items-center md:hidden mb-8">
         <NuxtLink to="/gallery">
         <button
-          class="bg-white text-[#1b3664] border border-gray-300 px-6 py-3 mb-12 md:mb-8 md:hover:bg-gray-200"
+          class="bg-white text-[#1b3664] border border-gray-300 px-6 py-3 md:hover:bg-gray-200"
         >
           View Our Gallery
         </button>

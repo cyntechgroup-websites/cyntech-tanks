@@ -10,14 +10,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(0)"
       >
-        <img
-          src="/images/gallery-1.webp"
-          alt="Before and After of a Tank Isolation Cleaning."
-          class="w-full object-contain flex-grow"
-          data-src="/images/gallery-1.webp"
-          data-title="Tank Isolation and Cleaning"
-          data-description="Before and After of a Tank Isolation Cleaning."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/gallery-1.webp"
+            alt="Before and After of a Tank Isolation Cleaning."
+            class="w-full object-contain md:object-cover md:w-full md:h-full"
+            data-src="/images/gallery-1.webp"
+            data-title="Tank Isolation and Cleaning"
+            data-description="Before and After of a Tank Isolation Cleaning."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -37,8 +41,7 @@
               Before and after of a tank isolation cleaning.
             </p>
             <footer>
-              <a
-                href="#"
+              <div
                 class="text-[#1b3664] font-normal flex items-center space-x-2"
               >
                 <span>See More</span>
@@ -46,7 +49,7 @@
                   class="text-xl md:group-hover:translate-x-4 transition-transform duration-300 ease-in-out"
                   >→</span
                 >
-              </a>
+              </div>
             </footer>
           </div>
         </section>
@@ -57,14 +60,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(1)"
       >
-        <img
-          src="/images/gallery-hero.webp"
-          alt="Tank Lifting and Levelling."
-          class="w-full object-contain flex-grow"
-          data-src="/images/gallery-hero.webp"
-          data-title="Tank Lifting and Levelling"
-          data-description="See how we level tanks with different techniques."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/gallery-hero.webp"
+            alt="Tank Lifting and Levelling."
+            class="w-full object-contain md:object-cover md:w-full md:h-full"
+            data-src="/images/gallery-hero.webp"
+            data-title="Tank Lifting and Levelling"
+            data-description="See how we level tanks with different techniques."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -84,8 +91,7 @@
               See how we level tanks with different techniques.
             </p>
             <footer>
-              <a
-                href="#"
+              <div
                 class="text-[#1b3664] font-normal flex items-center space-x-2"
               >
                 <span>See More</span>
@@ -93,7 +99,7 @@
                   class="text-xl md:group-hover:translate-x-4 transition-transform duration-300 ease-in-out"
                   >→</span
                 >
-              </a>
+              </div>
             </footer>
           </div>
         </section>
@@ -104,14 +110,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(2)"
       >
-        <img
-          src="/images/tank-foundations.webp"
-          alt="Tank Foundation Reconstruction."
-          class="w-full object-contain flex-grow"
-          data-src="/images/tank-foundations.webp"
-          data-title="Tank Foundation Reconstruction"
-          data-description="A few examples of projects requiring tanks reconstruction."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/tank-foundations.webp"
+            alt="Tank Foundation Reconstruction."
+            class="w-full object-contain flex-grow"
+            data-src="/images/tank-foundations.webp"
+            data-title="Tank Foundation Reconstruction"
+            data-description="A few examples of projects requiring tanks reconstruction."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -151,14 +161,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(3)"
       >
-        <img
-          src="/images/concrete-ringwall.webp"
-          alt="Different types of pile foundations built by Cyntech Tanks."
-          class="w-full object-contain flex-grow"
-          data-src="/images/concrete-ringwall.webp"
-          data-title="Concrete Ringwall / Pile Foundations"
-          data-description="Different types of pile foundations built by Cyntech Tanks."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/concrete-ringwall.webp"
+            alt="Different types of pile foundations built by Cyntech Tanks."
+            class="w-full object-contain flex-grow"
+            data-src="/images/concrete-ringwall.webp"
+            data-title="Concrete Ringwall / Pile Foundations"
+            data-description="Different types of pile foundations built by Cyntech Tanks."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -198,14 +212,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(4)"
       >
-        <img
-          src="/images/floor-repair.webp"
-          alt="Floor Repair and Replacement."
-          class="w-full object-contain flex-grow"
-          data-src="/images/floor-repair.webp"
-          data-title="Floor Repair and Replacement"
-          data-description="Examples of our floor replacement."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/floor-repair.webp"
+            alt="Floor Repair and Replacement."
+            class="w-full object-contain flex-grow"
+            data-src="/images/floor-repair.webp"
+            data-title="Floor Repair and Replacement"
+            data-description="Examples of our floor replacement."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -245,14 +263,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(5)"
       >
-        <img
-          src="/images/shell-repair.webp"
-          alt="Shell Course Repair and Replacement."
-          class="w-full object-contain flex-grow"
-          data-src="/images/shell-repair.webp"
-          data-title="Shell Course Repair and Replacement"
-          data-description="An inside look on how the shell is replaced."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/shell-repair.webp"
+            alt="Shell Course Repair and Replacement."
+            class="w-full object-contain flex-grow"
+            data-src="/images/shell-repair.webp"
+            data-title="Shell Course Repair and Replacement"
+            data-description="An inside look on how the shell is replaced."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -292,14 +314,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(6)"
       >
-        <img
-          src="/images/door-insert-sheets.webp"
-          alt="Door & Insert Sheets."
-          class="w-full object-contain flex-grow"
-          data-src="/images/door-insert-sheets.webp"
-          data-title="Door & Insert Sheets"
-          data-description="See the door sheets on the tanks."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/door-insert-sheets.webp"
+            alt="Door & Insert Sheets."
+            class="w-full object-contain flex-grow"
+            data-src="/images/door-insert-sheets.webp"
+            data-title="Door & Insert Sheets"
+            data-description="See the door sheets on the tanks."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -339,14 +365,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(7)"
       >
-        <img
-          src="/images/roof-repair.webp"
-          alt="Roof Repair and Replacement."
-          class="w-full object-contain flex-grow"
-          data-src="/images/roof-repair.webp"
-          data-title="Roof Repair and Replacement"
-          data-description="Drone photos of our tank roof repairs."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/roof-repair.webp"
+            alt="Roof Repair and Replacement."
+            class="w-full object-contain flex-grow"
+            data-src="/images/roof-repair.webp"
+            data-title="Roof Repair and Replacement"
+            data-description="Drone photos of our tank roof repairs."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -386,14 +416,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(8)"
       >
-        <img
-          src="/images/piping-tank.jpg"
-          alt="Piping/Tank Modifications."
-          class="w-full object-contain flex-grow"
-          data-src="/images/piping-tank.jpg"
-          data-title="Piping / Tank Modifications"
-          data-description="Custom modifications to Piping."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/piping-tank.jpg"
+            alt="Piping/Tank Modifications."
+            class="w-full object-contain flex-grow"
+            data-src="/images/piping-tank.jpg"
+            data-title="Piping / Tank Modifications"
+            data-description="Custom modifications to Piping."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -439,7 +473,7 @@
           @click.stop
         >
           <button
-            class="absolute top-0 right-2 text-[#1b3664] md:hover:text-gray-800 text-3xl"
+            class="absolute top-0 right-2 text-[#1b3664] md:hover:text-gray-800 text-2xl"
             @click="closeGallery"
           >
             ✕

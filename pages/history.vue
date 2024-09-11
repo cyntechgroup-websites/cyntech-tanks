@@ -26,7 +26,7 @@
             <img
               src="/public/images/1981.webp"
               alt="Image for 1981"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664]"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-2 border-[#1b3664]"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
@@ -45,7 +45,7 @@
             <img
               src="/public/images/1997.webp"
               alt="Image for 1997"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664]"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-2 border-[#1b3664]"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
@@ -64,7 +64,7 @@
             <img
               src="/public/images/2007.webp"
               alt="Image for 2007"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664]"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-2 border-[#1b3664]"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
@@ -83,7 +83,7 @@
             <img
               src="/public/images/2010.webp"
               alt="Image for 2010"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664] p-8 md:p-4"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-2 border-[#1b3664] p-8 md:p-4"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
@@ -104,7 +104,7 @@
             <img
               src="/public/images/2013.webp"
               alt="Image for 2013"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 border-4 border-[#1b3664] p-12 md:p-4 object-contain"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 border-2 border-[#1b3664] p-12 md:p-4 object-contain"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
@@ -128,7 +128,7 @@
             <img
               src="/public/images/2021.webp"
               alt="Image for 2021"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-4 border-[#1b3664] p-8 md:p-4"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-cover border-2 border-[#1b3664] p-8 md:p-4"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">

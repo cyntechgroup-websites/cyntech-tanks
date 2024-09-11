@@ -15,20 +15,20 @@
       </p>
       <div class="flex justify-center space-x-6 mt-4">
         <a
-          href="#"
+          href="/terms-of-use"
           class="mt-2 text-sm bg-[#1b3664] text-white px-4 py-2 md:hover:bg-[#FFC107] md:hover:text-[#1b3664] flex text-center justify-center"
           >Terms of use</a
         >
       </div>
       <div class="flex justify-center space-x-6 mt-6">
         <a
-          href="#"
+          href="https://www.linkedin.com/company/cyntech-tanks/" target="_blank"
           class="text-[#1b3664] md:hover:text-[#FFC107] md:hover:scale-105 md:hover:border-2 rounded border-[#FFC107] transition-all duration-150 ease-in-out md:p-1"
         >
           <Icon icon="lucide:linkedin" class="w-8 h-8" />
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/cyntech_group/?hl=en" target="_blank"
           class="text-[#1b3664] md:hover:text-[#FFC107] md:hover:scale-105 md:hover:border-2 rounded border-[#FFC107] transition-all duration-150 ease-in-out md:p-1"
         >
           <Icon icon="lucide:instagram" class="w-8 h-8" />

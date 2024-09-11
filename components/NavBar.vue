@@ -1,13 +1,16 @@
 <template>
-  <div class="z-50">
-    <header class="bg-[#F8F9FA] shadow-md relative">
+  <div>
+    <header class="bg-white shadow-md relative z-30">
       <!-- Office Locations Bar for large screens -->
       <div
-        class="hidden lg:flex justify-end items-center bg-[#1b3664] text-[#F8F9FA] px-12 text-sm"
+        class="hidden lg:flex justify-end items-center bg-[#1b3664] text-[#F8F9FA] px-12 text-sm z-50"
       >
         <!-- Links to office locations and contact info -->
         <div class="flex items-center space-x-6">
-          <NuxtLink to="/office-locations" class="group hover:bg-gray-300/30 py-4 px-4">
+          <NuxtLink
+            to="/office-locations"
+            class="group hover:bg-gray-300/30 py-4 px-4"
+          >
             <div class="flex items-center">
               <Icon
                 icon="lucide:globe"
@@ -27,7 +30,9 @@
       </div>
 
       <!-- Main Navbar Section -->
-      <section class="flex items-center justify-between py-4 px-4 lg:px-8">
+      <section
+        class="flex items-center justify-between py-4 px-4 lg:px-8 z-30 bg-white"
+      >
         <div class="flex items-center w-full lg:space-x-8">
           <!-- Logo with NuxtLink to the homepage -->
           <article class="flex-shrink-0">
@@ -74,20 +79,26 @@
                   ></div>
                 </div>
                 <!-- Submenu Links -->
-                <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                  <NuxtLink to="/history">Our History</NuxtLink>
-                </li>
-                <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                  <NuxtLink to="/leadership">Our Leadership</NuxtLink>
-                </li>
-                <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                  <NuxtLink to="/health-safety"
-                    >Our Commitment to Health and Safety</NuxtLink
-                  >
-                </li>
-                <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                  <NuxtLink to="/quality">Our Dedication to Quality</NuxtLink>
-                </li>
+                <NuxtLink to="/history">
+                  <li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Our History
+                  </li>
+                </NuxtLink>
+                <NuxtLink to="/leadership">
+                  <li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Our Leadership
+                  </li>
+                </NuxtLink>
+                <NuxtLink to="/health-safety">
+                  <li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Our Commitment to Health and Safety
+                  </li></NuxtLink
+                >
+                <NuxtLink to="/quality">
+                  <li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Our Dedication to Quality
+                  </li></NuxtLink
+                >
               </ul>
             </div>
 
@@ -122,22 +133,26 @@
                   ></div>
                 </div>
                 <!-- Links to services -->
-                <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                  <NuxtLink to="/tank-foundations">Tank Foundations</NuxtLink>
-                </li>
-                <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                  <NuxtLink to="/construction-maintenance"
-                    >Construction, Repair and Maintenance</NuxtLink
-                  >
-                </li>
-                <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                  <NuxtLink to="/lifting-relocation"
-                    >Lifting, Levelling and Relocation</NuxtLink
-                  >
-                </li>
-                <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                  <NuxtLink to="/tank-cleaning">Tank Cleaning</NuxtLink>
-                </li>
+                <NuxtLink to="/tank-foundations">
+                  <li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Tank Foundations
+                  </li></NuxtLink
+                >
+                <NuxtLink to="/construction-maintenance"
+                  ><li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Construction, Repair and Maintenance
+                  </li></NuxtLink
+                >
+                <NuxtLink to="/lifting-relocation"
+                  ><li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Lifting, Levelling and Relocation
+                  </li></NuxtLink
+                >
+                <NuxtLink to="/tank-cleaning"
+                  ><li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Tank Cleaning
+                  </li></NuxtLink
+                >
               </ul>
             </div>
 
@@ -167,7 +182,7 @@
             <!-- Search input -->
             <div
               v-if="searchOpen"
-              class="absolute top-14 lg:top-16 right-0 bg-[#F8F9FA] p-2 flex flex-col space-y-2 min-w-52 md:min-w-72 z-50"
+              class="absolute top-14 lg:top-16 right-0 bg-white p-2 flex flex-col space-y-2 min-w-52 md:min-w-72 z-50"
             >
               <input
                 type="text"
@@ -210,7 +225,7 @@
             <!-- Dropdown phone number with copy functionality -->
             <div
               v-if="phoneOpen"
-              class="absolute top-14 right-0 bg-[#F8F9FA] p-2 min-w-52"
+              class="absolute top-14 right-0 bg-white p-2 min-w-52"
             >
               <p
                 v-if="!copied"
@@ -251,7 +266,7 @@
     <transition name="slide-down">
       <nav
         v-if="menuOpen"
-        class="absolute top-[4.5rem] w-full bg-white shadow-md z-50 lg:hidden"
+        class="absolute top-[4.5rem] w-full bg-white shadow-md z-20 lg:hidden"
       >
         <ul
           v-if="subMenu === ''"
@@ -321,7 +336,7 @@
                 You are in: <br />
                 <span class="font-semibold text-base">{{
                   subMenu === "about"
-                    ? "About us"
+                    ? "About Us"
                     : subMenu === "services"
                     ? "Our Services"
                     : ""

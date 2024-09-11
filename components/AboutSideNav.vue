@@ -1,6 +1,6 @@
 <template>
   <article class="px-4 lg:pr-0 lg:pl-8 lg:hidden">
-    <div class="relative border border-gray-400 min-w-[220px] max-w-[500px] mx-auto lg:mt-14 z-30">
+    <div class="relative border border-gray-400 min-w-[220px] max-w-[500px] mx-auto lg:mt-14 z-10">
       <button
         @click="toggleDropdown"
         class="flex items-center justify-between w-full p-2 py-3 text-[#1b3664] bg-white border border-[#1b3664]"

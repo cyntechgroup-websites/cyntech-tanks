@@ -11,12 +11,12 @@
         @click="openGallery(0)"
       >
         <img
-          src="/images/gravel-ring-wall.webp"
+          src="/images/auto-welding.webp"
           alt="Gravel Ring Wall"
           class="w-full object-contain flex-grow"
-          data-src="/images/gravel-ring-wall.webp"
-          data-title="Gravel Ring Wall"
-          data-description="Gravel ringwall is a more cost-effective foundation for settling tanks. Along with tank move or tank lifts, we can remove and replace the existing foundation with a sound gravel ringwall."
+          data-src="/images/auto-welding.webp"
+          data-title="Automated Welding & Cutting System"
+          data-description="Our automated welding & cutting system technological solution will reduce the time and Labour efforts required for your shell, floor and roof repairs and replacements. Our automated system not only welds but can precisely torch cut to project requirements. Cyntech is currently working on expanding our Automated Welding & Cutting System by incorporated Plasma Cutting & Sub Arch welding."
         />
         <header>
           <hr
@@ -31,10 +31,10 @@
           ></div>
           <div class="relative z-10 flex-grow">
             <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
-              Gravel Ring Wall
+              Automated Welding & Cutting System
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl">
-              Cost effective foundation.
+              Reduces Time and Labour Efforts.
             </p>
             <footer>
               <a
@@ -252,24 +252,24 @@ import { ref, computed } from "vue";
 // Array of gallery images with src, title, and description
 const galleryImages = [
   {
-    src: "/images/gravel-ring-wall.webp",
-    title: "Gravel Ring Wall",
-    description: "Gravel ringwall is a more cost-effective foundation for settling tanks. Along with tank move or tank lifts, we can remove and replace the existing foundation with a sound gravel ringwall.",
+    src: "/images/auto-welding.webp",
+    title: "Automated Welding & Cutting System",
+    description: "Our automated welding & cutting system technological solution will reduce the time and Labour efforts required for your shell, floor and roof repairs and replacements. Our automated system not only welds but can precisely torch cut to project requirements. Cyntech is currently working on expanding our Automated Welding & Cutting System by incorporated Plasma Cutting & Sub Arch welding.",
   },
   {
-    src: "/images/reinforced-ring-wall.webp",
-    title: "Reinforced Ring Wall",
-    description: "Reinforced Concrete Ringwall is a more sound solution to tank settlement. Our civil engineers are experts and can design and draft an optimal ringwall for a variety of site conditions.",
+    src: "/images/coating-removal.webp",
+    title: "Heat Induction Coating Removal",
+    description: "Cyntech Has Utilized Heat Induction technology for the removal of Coating as an alternative to sandblast & chemicals. Safest, Healthiest and environmentally friendly solution for the removal of coatings.",
   },
   {
-    src: "/images/helical-piles.webp",
-    title: "Reinforced Ring Helical Piles",
-    description: "In addition to our reinforced concrete ringwalls, we team up with our Anchor Division and combine a deep foundation solution for tanks that are founded on undesirable bases.",
+    src: "/images/coatings.webp",
+    title: "Coatings",
+    description: "Cyntech can provide skilled personnel to ensure all your coating needs are met. Can provide External & Internal Coatings as needed for your project.",
   },
   {
-    src: "/images/grout-injection.webp",
-    title: "Grout Injection",
-    description: "We install a low strength grout that is equivalent to a compacted gravel ringwall as a cost-effective solution to soft foundations.",
+    src: "/images/blast-trailer.webp",
+    title: "Blast Trailer",
+    description: "Cyntech utilizes a blast-trailer filled with various blast media, dust collection equipment, and much more to meet all your blasting needs.",
   },
 ];
 
