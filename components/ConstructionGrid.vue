@@ -10,14 +10,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(0)"
       >
-        <img
-          src="/images/auto-welding.webp"
-          alt="Gravel Ring Wall"
-          class="w-full object-contain flex-grow"
-          data-src="/images/auto-welding.webp"
-          data-title="Automated Welding & Cutting System"
-          data-description="Our automated welding & cutting system technological solution will reduce the time and Labour efforts required for your shell, floor and roof repairs and replacements. Our automated system not only welds but can precisely torch cut to project requirements. Cyntech is currently working on expanding our Automated Welding & Cutting System by incorporated Plasma Cutting & Sub Arch welding."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/auto-welding.webp"
+            alt="Gravel Ring Wall"
+            class="w-full object-contain flex-grow"
+            data-src="/images/auto-welding.webp"
+            data-title="Automated Welding & Cutting System"
+            data-description="Our automated welding & cutting system technological solution will reduce the time and Labour efforts required for your shell, floor and roof repairs and replacements. Our automated system not only welds but can precisely torch cut to project requirements. Cyntech is currently working on expanding our Automated Welding & Cutting System by incorporated Plasma Cutting & Sub Arch welding."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -57,14 +61,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(1)"
       >
-        <img
-          src="/images/reinforced-ring-wall.webp"
-          alt="Reinforced Ring Wall."
-          class="w-full object-contain flex-grow"
-          data-src="/images/reinforced-ring-wall.webp"
-          data-title="Reinforced Ring Wall"
-          data-description="Reinforced Concrete Ringwall is a more sound solution to tank settlement. Our civil engineers are experts and can design and draft an optimal ringwall for a variety of site conditions."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/coating-removal.webp"
+            alt="Heat Induction Coating Removal."
+            class="w-full object-contain flex-grow"
+            data-src="/images/coating-removal.webp"
+            data-title="Heat Induction Coating Removal"
+            data-description="Cyntech Has Utilized Heat Induction technology for the removal of Coating as an alternative to sandblast & chemicals. Safest, Healthiest and environmentally friendly solution for the removal of coatings."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -78,10 +86,10 @@
           ></div>
           <div class="relative z-10 flex-grow">
             <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
-              Reinforced Ring Wall
+              Heat Induction Coating Removal
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl">
-              More sound option to tank settlement.
+              Alternative to sandblasting.
             </p>
             <footer>
               <a
@@ -104,14 +112,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(2)"
       >
-        <img
-          src="/images/helical-piles.webp"
-          alt="Reinforced Ring Helical Piles."
-          class="w-full object-contain flex-grow"
-          data-src="/images/helical-piles.webp"
-          data-title="Reinforced Ring Helical Piles"
-          data-description="In addition to our reinforced concrete ringwalls, we team up with our Anchor Division and combine a deep foundation solution for tanks that are founded on undesirable bases."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/coatings.webp"
+            alt="Coatings."
+            class="w-full object-contain flex-grow"
+            data-src="/images/coatings.webp"
+            data-title="Coatings"
+            data-description="Cyntech can provide skilled personnel to ensure all your coating needs are met. Can provide External & Internal Coatings as needed for your project."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -125,10 +137,11 @@
           ></div>
           <div class="relative z-10 flex-grow">
             <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
-              Reinforced Ring Helical Piles
+              Coatings
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl">
-              Deep foundation solution for tanks that are founded on undesirable bases.
+              Cyntech can provide skilled personnel to ensure all your coating
+              needs are met.
             </p>
             <footer>
               <a
@@ -151,14 +164,18 @@
         class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
         @click="openGallery(3)"
       >
-        <img
-          src="/images/grout-injection.webp"
-          alt="Grout Injection"
-          class="w-full object-contain flex-grow"
-          data-src="/images/grout-injection.webp"
-          data-title="Grout Injection"
-          data-description="We install a low strength grout that is equivalent to a compacted gravel ringwall as a cost-effective solution to soft foundations."
-        />
+        <div
+          class="relative overflow-hidden md:h-auto md:aspect-w-16 md:aspect-h-9"
+        >
+          <img
+            src="/images/blast-trailer.png"
+            alt="Blast Trailer"
+            class="w-full object-contain flex-grow"
+            data-src="/images/blast-trailer.png"
+            data-title="Blast Trailer"
+            data-description="Cyntech utilizes a blast-trailer filled with various blast media, dust collection equipment, and much more to meet all your blasting needs."
+          />
+        </div>
         <header>
           <hr
             class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
@@ -172,10 +189,10 @@
           ></div>
           <div class="relative z-10 flex-grow">
             <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
-              Grout Injection
+              Blast Trailer
             </h3>
             <p class="text-gray-600 mb-8 font-light md:text-xl">
-              Cost-effective soft foundation.
+              Cyntech utilizes a blast-trailer filled with various blast media.
             </p>
             <footer>
               <a
@@ -254,22 +271,26 @@ const galleryImages = [
   {
     src: "/images/auto-welding.webp",
     title: "Automated Welding & Cutting System",
-    description: "Our automated welding & cutting system technological solution will reduce the time and Labour efforts required for your shell, floor and roof repairs and replacements. Our automated system not only welds but can precisely torch cut to project requirements. Cyntech is currently working on expanding our Automated Welding & Cutting System by incorporated Plasma Cutting & Sub Arch welding.",
+    description:
+      "Our automated welding & cutting system technological solution will reduce the time and Labour efforts required for your shell, floor and roof repairs and replacements. Our automated system not only welds but can precisely torch cut to project requirements. Cyntech is currently working on expanding our Automated Welding & Cutting System by incorporated Plasma Cutting & Sub Arch welding.",
   },
   {
     src: "/images/coating-removal.webp",
     title: "Heat Induction Coating Removal",
-    description: "Cyntech Has Utilized Heat Induction technology for the removal of Coating as an alternative to sandblast & chemicals. Safest, Healthiest and environmentally friendly solution for the removal of coatings.",
+    description:
+      "Cyntech Has Utilized Heat Induction technology for the removal of Coating as an alternative to sandblast & chemicals. Safest, Healthiest and environmentally friendly solution for the removal of coatings.",
   },
   {
     src: "/images/coatings.webp",
     title: "Coatings",
-    description: "Cyntech can provide skilled personnel to ensure all your coating needs are met. Can provide External & Internal Coatings as needed for your project.",
+    description:
+      "Cyntech can provide skilled personnel to ensure all your coating needs are met. Can provide External & Internal Coatings as needed for your project.",
   },
   {
-    src: "/images/blast-trailer.webp",
+    src: "/images/blast-trailer.png",
     title: "Blast Trailer",
-    description: "Cyntech utilizes a blast-trailer filled with various blast media, dust collection equipment, and much more to meet all your blasting needs.",
+    description:
+      "Cyntech utilizes a blast-trailer filled with various blast media, dust collection equipment, and much more to meet all your blasting needs.",
   },
 ];
 

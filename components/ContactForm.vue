@@ -1,7 +1,7 @@
 <template>
     <Divider />
     <div class="pb-4 min-w-full mt-4">
-      <form action="https://formspree.io/f/xyyrbrnb" method="POST">
+      <form action="https://formspree.io/f/mldrknba" method="POST">
         <div class="flex flex-col mt-0 m-8 pt-4 max-w-5xl mx-auto">
           <div class="mb-4 pr-6 pl-6">
             <label for="name" class="block font-bold text-[#1b3664]"

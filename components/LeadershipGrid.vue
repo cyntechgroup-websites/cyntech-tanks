@@ -10,7 +10,7 @@
     <div
       class="grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-fr mx-auto lg:mx-0"
     >
-      <NuxtLink to="/leadership-1">
+      <NuxtLink to="/leadership-one">
         <article class="group lg:w-[420px]">
           <header>
             <hr
@@ -46,7 +46,7 @@
         </article>
       </NuxtLink>
 
-      <NuxtLink to="/leadership-2">
+      <NuxtLink to="/leadership-two">
         <article class="group lg:w-[420px]">
           <header>
             <hr
@@ -82,7 +82,7 @@
         </article>
       </NuxtLink>
 
-      <NuxtLink to="/leadership-3">
+      <NuxtLink to="/leadership-three">
         <article class="group lg:w-[420px]">
           <header>
             <hr
@@ -118,7 +118,7 @@
         </article>
       </NuxtLink>
 
-      <NuxtLink to="/leadership-4">
+      <NuxtLink to="/leadership-four">
         <article class="group lg:w-[420px]">
           <header>
             <hr

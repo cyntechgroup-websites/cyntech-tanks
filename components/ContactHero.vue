@@ -22,7 +22,7 @@
             Contact Us
           </h2>
           <h3
-            class="text-gray-600 text-2xl font-light text-center lg:text-start lg:ml-8"
+            class="text-gray-600 text-xl font-light text-center lg:text-start lg:ml-8"
           >
             Get In Touch With Us
           </h3>
