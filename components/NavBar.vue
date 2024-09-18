@@ -8,13 +8,25 @@
         <!-- Links to office locations and contact info -->
         <div class="flex items-center space-x-6">
           <NuxtLink
-            to="/contact-us"
-            class="group hover:bg-gray-300/30 py-4 px-4"
+            to="https://landing-page-development-cyntech.vercel.app/"
+            class="group hover:bg-gray-300/30 py-4 px-2"
+          >
+            <div class="flex items-center">
+              <Icon
+                icon="lucide:arrow-left"
+                class="h-5 w-5 mr-2 text-gray-400 group-hover:text-[#FFC107]"
+              />
+              <span>Back To Landing Page</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink
+            to="/office-locations"
+            class="group hover:bg-gray-300/30 py-4 px-2"
           >
             <div class="flex items-center">
               <Icon
                 icon="lucide:globe"
-                class="h-3 w-3 mr-2 text-gray-400 group-hover:text-[#FFC107]"
+                class="h-4 w-4 mr-2 text-gray-400 group-hover:text-[#FFC107]"
               />
               <span>Office Locations</span>
             </div>
@@ -22,7 +34,7 @@
           <div class="flex items-center space-x-2">
             <Icon
               icon="lucide:phone"
-              class="h-3 w-3 text-[#FFC107] scale-x-[-1]"
+              class="h-4 w-4 text-[#FFC107] scale-x-[-1]"
             />
             <span class="text-[#FFC107]"> (403) 228-1767</span>
           </div>
@@ -53,7 +65,11 @@
               @mouseleave="toggleSubMenu('')"
               class="relative"
             >
-              <NuxtLink to="/about-us" class="flex items-center" @click="closeSubMenu">
+              <NuxtLink
+                to="/about-us"
+                class="flex items-center"
+                @click="closeSubMenu"
+              >
                 <button class="text-[#1b3664] flex items-center">
                   About Us
                   <Icon
@@ -79,22 +95,22 @@
                   ></div>
                 </div>
                 <!-- Submenu Links -->
-                <NuxtLink to="/history"  @click="closeSubMenu">
+                <NuxtLink to="/history" @click="closeSubMenu">
                   <li class="p-4 text-[#1b3664] hover:bg-gray-300">
                     Our History
                   </li>
                 </NuxtLink>
-                <NuxtLink to="/leadership"  @click="closeSubMenu">
+                <NuxtLink to="/leadership" @click="closeSubMenu">
                   <li class="p-4 text-[#1b3664] hover:bg-gray-300">
                     Our Leadership
                   </li>
                 </NuxtLink>
-                <NuxtLink to="/health-safety"  @click="closeSubMenu">
+                <NuxtLink to="/health-safety" @click="closeSubMenu">
                   <li class="p-4 text-[#1b3664] hover:bg-gray-300">
                     Our Commitment to Health and Safety
                   </li></NuxtLink
                 >
-                <NuxtLink to="/quality"  @click="closeSubMenu">
+                <NuxtLink to="/quality" @click="closeSubMenu">
                   <li class="p-4 text-[#1b3664] hover:bg-gray-300">
                     Our Dedication to Quality
                   </li></NuxtLink
@@ -108,7 +124,11 @@
               @mouseleave="toggleSubMenu('')"
               class="relative"
             >
-              <NuxtLink to="/our-services" class="flex items-center"  @click="closeSubMenu">
+              <NuxtLink
+                to="/our-services"
+                class="flex items-center"
+                @click="closeSubMenu"
+              >
                 <button class="text-[#1b3664] flex items-center">
                   Our Services
                   <Icon
@@ -149,7 +169,7 @@
                     Lifting, Levelling and Relocation
                   </li></NuxtLink
                 >
-                <NuxtLink to="/tank-foundations"@click="closeSubMenu">
+                <NuxtLink to="/tank-foundations" @click="closeSubMenu">
                   <li class="p-4 text-[#1b3664] hover:bg-gray-300">
                     Tank Foundations
                   </li></NuxtLink
@@ -278,7 +298,8 @@
             <div class="flex justify-between items-center w-full">
               <NuxtLink
                 to="/about-us"
-                class="pl-4 py-4 text-[#1b3664] flex-grow" @click="closeMenu"
+                class="pl-4 py-4 text-[#1b3664] flex-grow"
+                @click="closeMenu"
               >
                 <span>About Us</span>
               </NuxtLink>
@@ -294,7 +315,8 @@
             <div class="flex justify-between items-center w-full">
               <NuxtLink
                 to="/our-services"
-                class="pl-4 py-4 text-[#1b3664] flex-grow" @click="closeMenu"
+                class="pl-4 py-4 text-[#1b3664] flex-grow"
+                @click="closeMenu"
               >
                 Our Services
               </NuxtLink>
@@ -322,11 +344,25 @@
               ></div>
             </li>
           </NuxtLink>
-          <NuxtLink to="/contact-us" @click="closeMenu">
+          <NuxtLink to="/office-locations" @click="closeMenu">
             <li class="p-4 bg-[#034]">
               <div class="text-[#F8F9FA] flex items-center">
                 <Icon icon="lucide:globe" class="h-4 w-4 mr-2 text-gray-400" />
                 Office Locations
+              </div>
+            </li>
+          </NuxtLink>
+          <NuxtLink
+            to="https://landing-page-development-cyntech.vercel.app/"
+            @click="closeMenu"
+          >
+            <li class="p-4 bg-[#FFC107]">
+              <div class="text-[#1b3664] flex items-center font-medium">
+                <Icon
+                  icon="lucide:arrow-left"
+                  class="h-4 w-4 mr-2 text-gray-800"
+                />
+                Back To Landing Page
               </div>
             </li>
           </NuxtLink>
@@ -365,7 +401,11 @@
               Our Leadership
             </li>
           </NuxtLink>
-          <NuxtLink to="/health-safety" class="text-[#1b3664]" @click="closeMenu">
+          <NuxtLink
+            to="/health-safety"
+            class="text-[#1b3664]"
+            @click="closeMenu"
+          >
             <li v-if="subMenu === 'about'" class="border-b border-gray-400 p-4">
               Our Commitment to Health and Safety
             </li>
@@ -374,8 +414,12 @@
             <li v-if="subMenu === 'about'" class="border-b border-gray-400 p-4">
               Our Dedication to Quality
             </li>
-          </NuxtLink>  
-          <NuxtLink to="/construction-maintenance" class="text-[#1b3664]" @click="closeMenu">
+          </NuxtLink>
+          <NuxtLink
+            to="/construction-maintenance"
+            class="text-[#1b3664]"
+            @click="closeMenu"
+          >
             <li
               v-if="subMenu === 'services'"
               class="border-b border-gray-400 p-4"
@@ -383,7 +427,11 @@
               Construction, Repair and Maintenance
             </li>
           </NuxtLink>
-          <NuxtLink to="/tank-cleaning" class="text-[#1b3664]" @click="closeMenu">
+          <NuxtLink
+            to="/tank-cleaning"
+            class="text-[#1b3664]"
+            @click="closeMenu"
+          >
             <li
               v-if="subMenu === 'services'"
               class="border-b border-gray-400 p-4"
@@ -391,7 +439,11 @@
               Tank Cleaning
             </li>
           </NuxtLink>
-          <NuxtLink to="/lifting-relocation" class="text-[#1b3664]" @click="closeMenu">
+          <NuxtLink
+            to="/lifting-relocation"
+            class="text-[#1b3664]"
+            @click="closeMenu"
+          >
             <li
               v-if="subMenu === 'services'"
               class="border-b border-gray-400 p-4"
@@ -399,7 +451,11 @@
               Lifting, Levelling and Relocation
             </li>
           </NuxtLink>
-          <NuxtLink to="/tank-foundations" class="text-[#1b3664]" @click="closeMenu">
+          <NuxtLink
+            to="/tank-foundations"
+            class="text-[#1b3664]"
+            @click="closeMenu"
+          >
             <li
               v-if="subMenu === 'services'"
               class="border-b border-gray-400 p-4"

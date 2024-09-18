@@ -6,8 +6,8 @@
       >
         <article class="hidden md:relative md:block w-full md:w-1/2 h-[250px]">
           <img
-            src="https://picsum.photos/600/400"
-            alt="Slide 1 Image"
+            src="/images/officehero.webp"
+            alt="Office Locations Hero Image"
             class="w-full h-full object-cover"
           />
           <div class="absolute inset-0 bg-gray-200 clip-triangle"></div>
