@@ -48,7 +48,7 @@
         <div class="flex items-center w-full lg:space-x-8">
           <!-- Logo with NuxtLink to the homepage -->
           <article class="flex-shrink-0">
-            <NuxtLink to="/" @click="closeSubMenu">
+            <NuxtLink to="/" @click="closeMenu">
               <img
                 :src="logoSrc"
                 alt="Cyntech Tanks"
@@ -356,8 +356,8 @@
             to="https://landing-page-development-cyntech.vercel.app/"
             @click="closeMenu"
           >
-            <li class="p-4 bg-[#FFC107]">
-              <div class="text-[#1b3664] flex items-center font-medium">
+            <li class="p-4 bg-white border-b border-gray-400">
+              <div class="text-[#1b3664] flex items-center">
                 <Icon
                   icon="lucide:arrow-left"
                   class="h-4 w-4 mr-2 text-gray-800"

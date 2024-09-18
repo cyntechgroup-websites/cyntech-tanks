@@ -36,7 +36,7 @@ export default {
               type: "Feature",
               properties: {
                 description:
-                  '<img class="max-w-96 p-8 pb-4" src="/images/cyntech-tanks-logo.svg" alt="Cyntech Tanks Calgary Office"><p class="font-medium">Calgary Office</p><p class="text-[#1b3664] hover:scale-105 transition duration-150 ease-in hover:underline underline-offset-2 decoration-1"><a href="https://maps.app.goo.gl/27Q4EewKRgamBSfe7" target="_blank">View On Google Maps</p>',
+                  '<img class="max-w-96 px-2 py-4" src="/images/cyntech-tanks-logo.svg" alt="Cyntech Tanks Calgary Office"><p class="font-medium">Calgary Office</p><p class="text-[#1b3664] hover:scale-105 transition duration-150 ease-in hover:underline underline-offset-2 decoration-1"><a href="https://maps.app.goo.gl/27Q4EewKRgamBSfe7" target="_blank">View On Google Maps</p>',
                 icon: "cyntech-group-logo-short",
               },
               geometry: {
@@ -48,7 +48,7 @@ export default {
               type: "Feature",
               properties: {
                 description:
-                  '<img class="max-w-96 p-8 pb-4" src="/images/cyntech-tanks-logo.svg" alt="Cyntech Tanks Bonnyville Office"><p class="font-medium">Bonnyville Office</p><p class="text-[#1b3664] hover:scale-105 transition duration-150 ease-in hover:underline underline-offset-2 decoration-1"><a href="https://maps.app.goo.gl/4EMS3Q2cQoqiQ7wX7" target="_blank">View On Google Maps</p>',
+                  '<img class="max-w-96 px-2 py-4" src="/images/cyntech-tanks-logo.svg" alt="Cyntech Tanks Bonnyville Office"><p class="font-medium">Bonnyville Office</p><p class="text-[#1b3664] hover:scale-105 transition duration-150 ease-in hover:underline underline-offset-2 decoration-1"><a href="https://maps.app.goo.gl/4EMS3Q2cQoqiQ7wX7" target="_blank">View On Google Maps</p>',
                 icon: "cyntech-group-logo-short",
               },
               geometry: {
@@ -60,7 +60,7 @@ export default {
               type: "Feature",
               properties: {
                 description:
-                  '<img class="max-w-96 p-8 pb-4" src="/images/cyntech-group.svg" alt="Cyntech Group Plantersville Office"><p class="font-medium">Plantersville Office</p><p class="text-[#1b3664] hover:scale-105 transition duration-150 ease-in hover:underline underline-offset-2 decoration-1"><a href="https://maps.app.goo.gl/Q5LezcBRgBbxHVCT9" target="_blank">View On Google Maps</p>',
+                  '<img class="max-w-96 px-2 py-4" src="/images/cyntech-group.svg" alt="Cyntech Group Plantersville Office"><p class="font-medium">Plantersville Office</p><p class="text-[#1b3664] hover:scale-105 transition duration-150 ease-in hover:underline underline-offset-2 decoration-1"><a href="https://maps.app.goo.gl/Q5LezcBRgBbxHVCT9" target="_blank">View On Google Maps</p>',
                 icon: "cyntech-group-logo-short",
               },
               geometry: {

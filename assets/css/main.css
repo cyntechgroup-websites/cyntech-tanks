@@ -47,32 +47,3 @@
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip {
   display: none !important;
 }
-
-.noSelect {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.noSelect:focus {
-  outline: none !important;
-}
-
-input {
-  border-radius: 0;
-}
-
-input[type="search"] {
-  -webkit-appearance: none;
-}
-
-textarea {
-  border-radius: 0;
-}
-
-textarea[type="search"] {
-  -webkit-appearance: none;
-}
