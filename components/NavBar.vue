@@ -24,7 +24,7 @@
               icon="lucide:phone"
               class="h-3 w-3 text-[#FFC107] scale-x-[-1]"
             />
-            <span class="text-[#FFC107]"> (403) 570-5860</span>
+            <span class="text-[#FFC107]"> (403) 228-1767</span>
           </div>
         </div>
       </div>
@@ -132,15 +132,16 @@
                     class="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-[#1b3664]"
                   ></div>
                 </div>
+
                 <!-- Links to services -->
-                <NuxtLink to="/tank-foundations"@click="closeSubMenu">
-                  <li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                    Tank Foundations
-                  </li></NuxtLink
-                >
                 <NuxtLink to="/construction-maintenance" @click="closeSubMenu"
                   ><li class="p-4 text-[#1b3664] hover:bg-gray-300">
                     Construction, Repair and Maintenance
+                  </li></NuxtLink
+                >
+                <NuxtLink to="/tank-cleaning" @click="closeSubMenu"
+                  ><li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Tank Cleaning
                   </li></NuxtLink
                 >
                 <NuxtLink to="/lifting-relocation" @click="closeSubMenu"
@@ -148,9 +149,9 @@
                     Lifting, Levelling and Relocation
                   </li></NuxtLink
                 >
-                <NuxtLink to="/tank-cleaning" @click="closeSubMenu"
-                  ><li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                    Tank Cleaning
+                <NuxtLink to="/tank-foundations"@click="closeSubMenu">
+                  <li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Tank Foundations
                   </li></NuxtLink
                 >
               </ul>
@@ -373,21 +374,21 @@
             <li v-if="subMenu === 'about'" class="border-b border-gray-400 p-4">
               Our Dedication to Quality
             </li>
-          </NuxtLink>
-          <NuxtLink to="/tank-foundations" class="text-[#1b3664]" @click="closeMenu">
-            <li
-              v-if="subMenu === 'services'"
-              class="border-b border-gray-400 p-4"
-            >
-              Tank Foundations
-            </li>
-          </NuxtLink>
+          </NuxtLink>  
           <NuxtLink to="/construction-maintenance" class="text-[#1b3664]" @click="closeMenu">
             <li
               v-if="subMenu === 'services'"
               class="border-b border-gray-400 p-4"
             >
               Construction, Repair and Maintenance
+            </li>
+          </NuxtLink>
+          <NuxtLink to="/tank-cleaning" class="text-[#1b3664]" @click="closeMenu">
+            <li
+              v-if="subMenu === 'services'"
+              class="border-b border-gray-400 p-4"
+            >
+              Tank Cleaning
             </li>
           </NuxtLink>
           <NuxtLink to="/lifting-relocation" class="text-[#1b3664]" @click="closeMenu">
@@ -398,12 +399,12 @@
               Lifting, Levelling and Relocation
             </li>
           </NuxtLink>
-          <NuxtLink to="/tank-cleaning" class="text-[#1b3664]" @click="closeMenu">
+          <NuxtLink to="/tank-foundations" class="text-[#1b3664]" @click="closeMenu">
             <li
               v-if="subMenu === 'services'"
               class="border-b border-gray-400 p-4"
             >
-              Tank Cleaning
+              Tank Foundations
             </li>
           </NuxtLink>
         </ul>

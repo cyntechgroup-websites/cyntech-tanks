@@ -13,8 +13,8 @@
         >
           <article class="relative w-full md:h-full md:w-1/2">
             <img
-              src="/public/images/who-we-are.webp"
-              alt="Slide 1 Image"
+              src="/public/images/who-we-are.jpg"
+              alt="Who We Are Image"
               class="w-full h-full object-cover"
             />
             <div class="absolute inset-0 bg-[#FFC107] clip-triangle"></div>
@@ -46,8 +46,8 @@
         >
           <article class="relative w-full md:h-full md:w-1/2">
             <img
-              src="/public/images/shell-replacement.webp"
-              alt="Slide 2 Image"
+              src="/public/images/what-we-do.jpg"
+              alt="What We Do Image"
               class="w-full h-full object-cover"
             />
             <div

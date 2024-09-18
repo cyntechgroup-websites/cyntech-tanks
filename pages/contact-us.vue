@@ -1,6 +1,7 @@
 <template>
     <ContactHero />
-    <section class="max-w-[1200px] mx-auto py-8 px-4">
+    <section class="w-full mx-auto py-8 px-4">
+      <div class="flex flex-col max-w-[1000px] mx-auto">
     <h2 class="text-2xl font-medium text-[#1b3664] mb-6">Canada</h2>
 
     <!-- Calgary Office -->
@@ -13,7 +14,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row justify-between gap-4">
+      <div class="flex flex-col md:flex-row justify-between gap-6">
         <!-- Get in Touch -->
         <div class="mb-6 md:mb-0">
           <h4 class="font-medium text-[#1b3664] mb-2">Get in touch</h4>
@@ -23,9 +24,9 @@
           <p class="text-[#1b3664] mb-4">
             <strong>E: </strong>
             <a
-              href="mailto:info@cyntechgroup.com"
+              href="mailto:info@cyntechtanks.com"
               class="text-[#1b3664] underline"
-              >info@cyntechgroup.com</a
+              >info@cyntechtanks.com</a
             >
           </p>
           <a
@@ -90,9 +91,9 @@
           <p class="text-[#1b3664] mb-4">
             <strong>E: </strong>
             <a
-              href="mailto:info@cyntechgroup.com"
+              href="mailto:info@cyntechtanks.com"
               class="text-[#1b3664] underline"
-              >info@cyntechgroup.com</a
+              >info@cyntechtanks.com</a
             >
           </p>
           <a
@@ -160,6 +161,7 @@
       </div>
     </div>
     <ContactForm />
+  </div>
   </section>
 </template>
 
