@@ -7,7 +7,7 @@
     >
       <article class="flex mt-12 px-6 lg:min-w-96 lg:max-w-96">
         <img
-          src="/images/travis.jpg"
+          src="/images/travis.png"
           alt="Travis Fedirko"
           class="w-full h-full object-cover rounded-lg border-4 border-[#1b3664]"
         />
