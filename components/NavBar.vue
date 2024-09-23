@@ -3,10 +3,10 @@
     <header class="bg-white shadow-md relative z-30">
       <!-- Office Locations Bar for large screens -->
       <div
-        class="hidden lg:flex justify-end items-center bg-[#1b3664] text-[#F8F9FA] px-12 text-sm z-50"
+        class="hidden lg:flex justify-end items-center bg-[#1b3664] text-[#F8F9FA] px-8 text-sm z-50"
       >
         <!-- Links to office locations and contact info -->
-        <div class="flex items-center space-x-6">
+        <div class="flex items-center gap-4">
           <NuxtLink
             to="https://landing-page-development-cyntech.vercel.app/"
             class="group hover:bg-gray-300/30 py-4 px-2"
@@ -31,13 +31,14 @@
               <span>Office Locations</span>
             </div>
           </NuxtLink>
-          <div class="flex items-center space-x-2">
+          <button class="flex items-center space-x-2 hover:bg-gray-300/30 py-4 px-2 min-w-36" @click="copyPhoneNumber">
             <Icon
               icon="lucide:phone"
               class="h-4 w-4 text-[#FFC107] scale-x-[-1]"
             />
-            <span class="text-[#FFC107]"> (403) 228-1767</span>
-          </div>
+            <span v-if="!copied" class="text-[#FFC107]">(403) 228-1767</span>
+            <span v-if="copied" class="text-[#FFC107]">Phone Copied!</span>
+          </button>
         </div>
       </div>
 
@@ -252,7 +253,7 @@
                 v-if="!copied"
                 class="text-base text-[#1b3664] flex justify-center bg-[#FFC107] p-2"
               >
-                (403) 570-5860
+              (403) 228-1767
               </p>
               <p
                 v-if="copied"

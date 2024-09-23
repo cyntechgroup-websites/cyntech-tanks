@@ -14,7 +14,7 @@
       >
         <!-- Responsive Image Container -->
         <div
-          class="relative overflow-hidden max-w-96 max-h-96 aspect-square md:aspect-video"
+          class="relative overflow-hidden max-w-[420px] max-h-96 aspect-square md:aspect-video"
         >
           <img
             :src="image.src"
@@ -37,7 +37,7 @@
             <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
               {{ image.title }}
             </h3>
-            <p class="text-gray-600 mb-8 font-light md:text-xl">
+            <p class="text-gray-600 mb-8 font-light md:text-xl max-w-80">
               {{ image.shortDescription }}
             </p>
             <footer>

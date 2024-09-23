@@ -104,7 +104,7 @@
             <img
               src="/public/images/2013.webp"
               alt="Image for 2013"
-              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 border-2 border-[#1b3664] p-12 md:p-4 object-contain"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 border-2 border-[#1b3664] p-12 md:p-4 object-contain md:max-h-52"
             />
             <div class="md:w-2/3">
               <div class="flex items-center">
@@ -113,8 +113,7 @@
               </div>
               <p class="text-gray-700 leading-relaxed font-light">
                 In July 2013, Keller Group plc acquired Cyntech Corporation as
-                part of the acquisition of North American Caisson Ltd. (a
-                division of North American Construction Group - NACG). Through
+                part of the acquisition of North American Caisson Ltd. Through
                 this partnership, Cyntech joined the largest ground engineering
                 specialist in the world and gained access to leading technology,
                 resources, knowledge and efficiencies for the benefit of both
@@ -138,6 +137,24 @@
               <p class="text-gray-700 leading-relaxed font-light">
                 Cyntech's helical pile and pipeline anchoring division completes
                 Management Buyout from Keller and becomes Cyntech Group.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2023 -->
+          <div class="flex flex-col md:flex-row mb-8">
+            <img
+              src="/public/images/cyntech-tanks-logo.svg"
+              alt="Image for 2023"
+              class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6 object-contain border-2 border-[#1b3664] p-8 md:p-4 py-48 md:py-[85px]"
+            />
+            <div class="md:w-2/3">
+              <div class="flex items-center">
+                <h3 class="text-[#1b3664] font-bold text-3xl mb-2">2023</h3>
+                <div class="ml-4 flex-grow h-0.5 bg-[#fdc70c]"></div>
+              </div>
+              <p class="text-gray-700 leading-relaxed font-light">
+                Cyntech Group organizes a group of investors and completes the Buyout of the Tanks Division from Keller.
               </p>
             </div>
           </div>

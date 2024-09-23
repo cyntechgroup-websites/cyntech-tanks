@@ -4,9 +4,9 @@
       <section
         class="flex flex-col md:flex-row-reverse items-center bg-gray-200 h-auto max-h-[250px]"
       >
-        <article class="hidden md:relative md:block w-full md:w-1/2 h-[250px]">
+        <article class="absolute opacity-15 md:opacity-100 md:relative md:block w-full md:w-1/2 h-[250px] z-0">
           <img
-            src="/images/hs-hero.jpg"
+            src="/images/hs-hero.png"
             alt="Slide 1 Image"
             class="w-full h-full object-cover"
           />
@@ -17,7 +17,7 @@
           class="w-full md:w-1/2 px-10 pt-10 pb-10 min-h-[200px] mx-auto flex justify-center flex-col"
         >
           <h2
-            class="text-[#1b3664] text-3xl md:text-4xl font-semibold text-center"
+            class="text-[#1b3664] text-3xl md:text-4xl font-semibold text-center z-10"
           >
             Our Commitment to Health and Safety
           </h2>

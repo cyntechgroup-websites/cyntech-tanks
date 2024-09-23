@@ -16,7 +16,7 @@
 
       <p class="text-lg text-gray-600 mb-8 md:text-xl font-light">
         Whether large or small, complex or simple, we take the time to
-        understand every subsurface problem and provide the optimal,
+        understand every problem and provide the optimal,
         project-specific solution. The size of the project is irrelevant to
         us—what drives us is sharing in our client's satisfaction of a job well
         done.
