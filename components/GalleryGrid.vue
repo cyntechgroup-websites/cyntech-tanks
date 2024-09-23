@@ -98,28 +98,8 @@
         </div>
 
         <div class="flex flex-col justify-between">
-          <!-- Sliding description content -->
-          <div class="relative w-full overflow-hidden mt-4">
-            <!-- Title and yellow line stay in place -->
-            <div class="w-full flex-shrink-0 p-4">
-              <header>
-                <hr
-                  class="h-[2px] bg-[#fdc70c] my-4 xs:translate-x-5 mx-auto xs:max-w-80 max-w-72 xs:mx-4"
-                />
-              </header>
-
-              <h2 class="text-[#1b3664] text-2xl mb-4 mt-2 px-0 xs:px-4">
-                {{ currentImage.title }}
-              </h2>
-
-              <!-- Only the description stays static -->
-              <p class="text-gray-700 text-lg px-0 xs:px-4">
-                {{ currentImage.description }}
-              </p>
-            </div>
-
-            <!-- Dots for slide navigation -->
-            <div
+          <!-- Dots for slide navigation -->
+          <div
               class="flex justify-center space-x-2 mt-4 items-center min-h-10"
             >
               <button
@@ -133,7 +113,9 @@
                 v-for="(slide, index) in currentImage.slides"
                 :key="index"
                 class="h-2 w-2 rounded-full"
-                :class="index === currentSlideIndex ? 'bg-[#fdc70c]' : 'bg-gray-400'"
+                :class="
+                  index === currentSlideIndex ? 'bg-[#fdc70c]' : 'bg-gray-400'
+                "
                 @click="goToSlide(index)"
               ></span>
               <button
@@ -143,6 +125,25 @@
               >
                 →
               </button>
+            </div>
+          <!-- Sliding description content -->
+          <div class="relative w-full overflow-hidden">
+            <!-- Title and yellow line stay in place -->
+            <div class="w-full flex-shrink-0 p-4">
+              <header>
+                <hr
+                  class="h-[2px] bg-[#fdc70c] mb-4 xs:translate-x-5 mx-auto xs:max-w-80 max-w-72 xs:mx-4"
+                />
+              </header>
+
+              <h2 class="text-[#1b3664] text-2xl mb-4 mt-2 px-0 xs:px-4">
+                {{ currentImage.title }}
+              </h2>
+
+              <!-- Only the description stays static -->
+              <p class="text-gray-700 text-lg px-0 xs:px-4">
+                {{ currentImage.description }}
+              </p>
             </div>
           </div>
         </div>
@@ -175,12 +176,23 @@ onMounted(() => {
 // Array of gallery images with multiple image slides and descriptions
 const galleryImages = [
   {
+    title: "Automated Welding",
+    shortDescription: "Placeholder Automated Welding.",
+    description: "Placeholder Automated Welding.",
+    slides: [
+      { src: "/images/automated-welding-1.jpg" },
+      { src: "/images/automated-welding-2.jpg" },
+      { src: "/images/automated-welding-3.jpg" },
+      { src: "/images/automated-welding-4.jpg" },
+    ],
+  },
+  {
     title: "Tank Isolation and Cleaning",
     shortDescription: "Before and After of a Tank Isolation Cleaning.",
     description: "Before and After of a Tank Isolation Cleaning.",
     slides: [
       { src: "/images/gallery-1.webp" },
-      { src: "/images/gallery-1-alt.webp" },  // Add extra slides here
+      { src: "/images/gallery-1-alt.webp" }, // Add extra slides here
     ],
   },
   {
@@ -191,48 +203,40 @@ const galleryImages = [
       { src: "/images/lifting-1.jpg" },
       { src: "/images/lifting-2.jpg" },
       { src: "/images/lifting-3.jpg" },
-      { src: "/images/lifting-4.jpg" },  // Add extra slides here
+      { src: "/images/lifting-4.jpg" }, // Add extra slides here
     ],
   },
   {
     title: "Tank Foundation Reconstruction",
-    shortDescription: "A few examples of projects requiring tanks reconstruction.",
+    shortDescription:
+      "A few examples of projects requiring tanks reconstruction.",
     description: "A few examples of projects requiring tanks reconstruction.",
-    slides: [
-      { src: "/images/tank-foundations.webp" },
-    ],
+    slides: [{ src: "/images/tank-foundations.webp" }],
   },
   {
     title: "Concrete Ringwall / Pile Foundations",
-    shortDescription: "Different types of pile foundations built by Cyntech Tanks.",
+    shortDescription:
+      "Different types of pile foundations built by Cyntech Tanks.",
     description: "Different types of pile foundations built by Cyntech Tanks.",
-    slides: [
-      { src: "/images/concrete-ringwall.webp" },
-    ],
+    slides: [{ src: "/images/concrete-ringwall.webp" }],
   },
   {
     title: "Floor Repair and Replacement",
     shortDescription: "Examples of our floor replacement.",
     description: "Examples of our floor replacement.",
-    slides: [
-      { src: "/images/floor-repair.webp" },
-    ],
+    slides: [{ src: "/images/floor-repair.webp" }],
   },
   {
     title: "Shell Course Repair and Replacement",
     shortDescription: "An inside look on how the shell is replaced.",
     description: "An inside look on how the shell is replaced.",
-    slides: [
-      { src: "/images/shell-repair.webp" },
-    ],
+    slides: [{ src: "/images/shell-repair.webp" }],
   },
   {
     title: "Door & Insert Sheets",
     shortDescription: "See the door sheets on the tanks.",
     description: "See the door sheets on the tanks.",
-    slides: [
-      { src: "/images/door-insert-sheets.webp" },
-    ],
+    slides: [{ src: "/images/door-insert-sheets.webp" }],
   },
   {
     title: "Roof Repair and Replacement",
@@ -249,10 +253,7 @@ const galleryImages = [
     title: "Piping / Tank Modifications",
     shortDescription: "Custom modifications to Piping.",
     description: "Custom modifications to Piping.",
-    slides: [
-    { src: "/images/piping.jpg" },
-      { src: "/images/piping-tank.jpg" },
-    ],
+    slides: [{ src: "/images/piping.jpg" }, { src: "/images/piping-tank.jpg" }],
   },
   {
     title: "Coatings",
