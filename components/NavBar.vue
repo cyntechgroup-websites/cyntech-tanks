@@ -155,6 +155,11 @@
                 </div>
 
                 <!-- Links to services -->
+                <NuxtLink to="/engineering-services" @click="closeSubMenu"
+                  ><li class="p-4 text-[#1b3664] hover:bg-gray-300">
+                    Engineering Services
+                  </li></NuxtLink
+                >
                 <NuxtLink to="/construction-maintenance" @click="closeSubMenu"
                   ><li class="p-4 text-[#1b3664] hover:bg-gray-300">
                     Construction, Repair and Maintenance
@@ -414,6 +419,18 @@
           <NuxtLink to="/quality" class="text-[#1b3664]" @click="closeMenu">
             <li v-if="subMenu === 'about'" class="border-b border-gray-400 p-4">
               Our Dedication to Quality
+            </li>
+          </NuxtLink>
+          <NuxtLink
+            to="/engineering-services"
+            class="text-[#1b3664]"
+            @click="closeMenu"
+          >
+            <li
+              v-if="subMenu === 'services'"
+              class="border-b border-gray-400 p-4"
+            >
+              Engineering Services
             </li>
           </NuxtLink>
           <NuxtLink

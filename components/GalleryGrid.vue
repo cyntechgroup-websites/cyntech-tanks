@@ -14,7 +14,7 @@
       >
         <!-- Responsive Image Container -->
         <div
-          class="relative overflow-hidden max-w-[420px] max-h-96 aspect-square md:aspect-video"
+          class="relative overflow-hidden mx-auto aspect-square md:aspect-video"
         >
           <img
             :src="image.slides[0].src"

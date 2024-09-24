@@ -1,9 +1,9 @@
 <template>
   <section
-    class="flex flex-col lg:py-12 py-2 px-6 md:px-14 justify-center lg:min-w-full items-center mb-20 lg:mb-4"
+    class="flex flex-col lg:py-12 py-2 px-6 md:px-14 justify-center lg:min-w-full items-center mb-20 lg:mb-4 mt-8"
   >
     <div
-      class="grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-[1fr] mx-auto lg:mx-0 justify-items-center"
+      class="grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-[1fr] mx-auto lg:mx-0"
     >
       <!-- Gallery Items -->
       <article
@@ -14,7 +14,7 @@
       >
         <!-- Responsive Image Container -->
         <div
-          class="relative overflow-hidden max-w-96 max-h-96 aspect-square md:aspect-video"
+          class="relative overflow-hidden mx-auto aspect-square md:aspect-video max-w-[400px]"
         >
           <img
             :src="image.src"
@@ -33,11 +33,11 @@
           <div
             class="absolute inset-0 w-[400px] h-[200px] bg-gray-100 transform origin-left rotate-45 -translate-y-[100px] -translate-x-[100px] md:group-hover:bg-[#E9EEF5]"
           ></div>
-          <div class="relative z-10 flex-grow max-w-80">
-            <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
+          <div class="relative z-10 flex-grow">
+            <h3 class="text-2xl font-medium text-[#1b3664] mb-4">
               {{ image.title }}
             </h3>
-            <p class="text-gray-600 mb-8 font-light md:text-xl">
+            <p class="text-gray-600 mb-8 font-light max-w-80">
               {{ image.shortDescription }}
             </p>
             <footer>

@@ -42,8 +42,7 @@
             />
             <h3 class="text-xl font-bold text-[#1b3664]">Tank Cleaning</h3>
             <p class="text-gray-600 pb-4 flex items-center">
-              <Icon icon="lucide:map-pin" class="text-gray-600 mr-2" /> Cold Lake,
-              AB, Canada
+              <Icon icon="lucide:map-pin" class="text-gray-600 mr-2" /> Alberta, Canada
             </p>
           </NuxtLink>
         </article>
@@ -59,8 +58,7 @@
               Tank Shell Replacement
             </h3>
             <p class="text-gray-600 pb-4 flex items-center">
-              <Icon icon="lucide:map-pin" class="text-gray-600 mr-2" /> Cold Lake,
-              AB, Canada
+              <Icon icon="lucide:map-pin" class="text-gray-600 mr-2" /> Alberta, Canada
             </p>
           </NuxtLink>
         </article>

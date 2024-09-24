@@ -82,5 +82,10 @@ const Clients = ref([
   { name: "Kinder Morgan", image: "kinder.png" },
   { name: "Petro Canada", image: "petro.png" },
   { name: "Trans Mountain", image: "trans.png" },
+  { name: "Strathcona Resources", image: "strathcona.jpg" },
+  { name: "Enbridge", image: "enbridge.png" },
+  { name: "McAsphalt Industries", image: "mcasphalt.jpg" },
+  { name: "Transcanada Energy", image: "trans-energy.jpg" },
+  { name: "CN Rail", image: "cnrail.png" },
 ]);
 </script>

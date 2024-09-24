@@ -19,7 +19,7 @@
           Senior Engineer
         </h2>
         <p class="text-gray-500 mb-6">
-          Thomas Alberda is a Senior Engineer at Cyntech Tanks.
+          Thomas Alberda is a Senior Engineer at Cyntech Tanks, registered in Alberta, Ontario and BC.
         </p>
         <p class="text-gray-500 mb-6">
           Tom holds a B.Sc. in Engineering from the University of Calgary. He is a Professional Engineer registered in Alberta and Ontario. He is also registered with the American Petroleum Institute as an API 653 inspector since 2006.

@@ -15,7 +15,7 @@
           <h3 class="text-xl text-gray-500">
             As such, personnel at every level of the organization have
             responsibilities that collectively contribute to our culture of
-            safety and prevent accidents.
+            safety and prevent incidents.
           </h3>
           <h2 class="text-2xl my-8 text-gray-600 font-semibold">
             Our Methods, Objectives, and Principles

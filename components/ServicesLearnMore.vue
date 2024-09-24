@@ -3,6 +3,43 @@
     <div
       class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-fr"
     >
+
+    <article class="group">
+        <NuxtLink to="/engineering-services">
+          <header>
+            <hr
+              class="h-[2px] w-52 bg-[#fdc70c] mb-4 translate-x-10 md:group-hover:bg-[#1b3664]"
+            />
+          </header>
+          <section
+            class="relative p-8 transition-all duration-300 overflow-hidden h-full flex flex-col"
+          >
+            <div
+              class="absolute inset-0 w-[400px] h-[200px] bg-gray-100 transform origin-left rotate-45 -translate-y-[100px] -translate-x-[100px] md:group-hover:bg-[#E9EEF5]"
+            ></div>
+            <div class="relative z-10 flex-grow">
+              <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
+                Engineering Services
+              </h3>
+              <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus odit maxime facere aperiam et doloremque natus nemo provident quis deserunt?.
+              </p>
+              <footer>
+                <div
+                  class="text-[#1b3664] font-normal flex items-center space-x-2"
+                >
+                  <span>Learn more</span>
+                  <span
+                    class="text-xl md:group-hover:translate-x-4 transition-transform duration-300 ease-in-out"
+                    >→</span
+                  >
+                </div>
+              </footer>
+            </div>
+          </section>
+        </NuxtLink>
+      </article>
+
       <article class="group">
         <NuxtLink to="/tank-cleaning">
           <header>

@@ -14,7 +14,7 @@
       >
         <!-- Responsive Image Container -->
         <div
-          class="relative overflow-hidden max-w-[420px] max-h-96 aspect-square md:aspect-video"
+          class="relative overflow-hidden max-w-96 max-h-96 aspect-square md:aspect-video"
         >
           <img
             :src="image.src"
@@ -37,7 +37,7 @@
             <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
               {{ image.title }}
             </h3>
-            <p class="text-gray-600 mb-8 font-light md:text-xl max-w-80">
+            <p class="text-gray-600 mb-8 font-light md:text-xl">
               {{ image.shortDescription }}
             </p>
             <footer>
@@ -101,38 +101,36 @@
           <!-- Sliding description content -->
           <div class="relative w-full overflow-hidden mt-4">
             <!-- Title and yellow line stay in place -->
-            <div class="w-full flex-shrink-0 p-4">
-              <header>
-                <hr
-                  class="h-[2px] bg-[#fdc70c] my-4 xs:translate-x-5 mx-auto xs:max-w-80 max-w-72 xs:mx-4"
-                />
-              </header>
+             <div class="w-full flex-shrink-0 p-4">
+            <header>
+              <hr
+                class="h-[2px] bg-[#fdc70c] my-4 xs:translate-x-5 mx-auto xs:max-w-80 max-w-72 xs:mx-4"
+              />
+            </header>
 
-              <h2 class="text-[#1b3664] text-2xl mb-4 mt-2 px-0 xs:px-4">
-                {{ currentImage.title }}
-              </h2>
+            <h2 class="text-[#1b3664] text-2xl mb-4 mt-2 px-0 xs:px-4">
+              {{ currentImage.title }}
+            </h2>
 
-              <!-- Only the description slides -->
-              <div class="relative w-full overflow-hidden">
+            <!-- Only the description slides -->
+            <div class="relative w-full overflow-hidden">
+              <div
+                class="flex transition-transform duration-500"
+                :style="{
+                  transform: `translateX(-${currentSlideIndex * 100}%)`,
+                }"
+              >
                 <div
-                  class="flex transition-transform duration-500"
-                  :style="{
-                    transform: `translateX(-${currentSlideIndex * 100}%)`,
-                  }"
+                  v-for="(content, index) in currentImage.longDescriptionSlides"
+                  :key="index"
+                  class="w-full flex-shrink-0"
                 >
-                  <div
-                    v-for="(
-                      content, index
-                    ) in currentImage.longDescriptionSlides"
-                    :key="index"
-                    class="w-full flex-shrink-0"
-                  >
-                    <!-- Long description for each slide -->
-                    <p
-                      class="text-gray-700 text-lg px-0 xs:px-4"
-                      v-html="content"
-                    ></p>
-                  </div>
+                  <!-- Long description for each slide -->
+                  <p
+                    class="text-gray-700 text-lg px-0 xs:px-4"
+                    v-html="content"
+                  ></p>
+                </div>
                 </div>
               </div>
             </div>
@@ -196,38 +194,41 @@ onMounted(() => {
 // Array of gallery images with src, title, short description, and long description slides
 const galleryImages = [
   {
-    src: "/images/airbag.webp",
-    title: "Airbag System",
-    shortDescription: "Our system allows tank integrity to be mantained.",
+    src: "https://picsum.photos/200",
+    title: "Lorem Ipsum 1",
+    shortDescription: "lorem ipsum dolor sit amet.",
     longDescriptionSlides: [
-      "Cyntech utilizes a unique airbag lifting system to elevate the tank from its base to allow for remedial action. Our system offers tremendous advantages over conventional hydraulic jacking methods, including maintaining tank integrity, requiring no concrete support system, and avoiding the need for welding on the tank shell.",
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
     ],
   },
   {
-    src: "/images/remediation.webp",
-    title: "Lifting & Remediation",
-    shortDescription:
-      "Including tank lifting, levelling, repair or replacement of roofs and floors.",
+    src: "https://picsum.photos/200",
+    title: "Lorem Ipsum 2",
+    shortDescription: "lorem ipsum dolor sit amet.",
     longDescriptionSlides: [
-      "Our services include tank lifting, levelling, repair or replacement of roofs and floors, shell repairs, and reconstruction of foundations, along with edge settlement repair, installation of secondary containment liners, and cathodic protection.",
+      "<strong>lorem:</strong><br>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
+      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
+      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
     ],
   },
   {
-    src: "/images/quality-image.webp",
-    title: "Tank Relocation",
-    shortDescription: "Tank relocation for significant cost savings.",
+    src: "https://picsum.photos/200",
+    title: "Lorem Ipsum 3",
+    shortDescription: "lorem ipsum dolor sit amet.",
     longDescriptionSlides: [
-      "Relocating existing tanks can result in substantial cost savings compared to the expense of building new tank facilities. Cyntech's skilled and experienced crews specialize in providing comprehensive tank relocation services, whether overland or via navigable waterways.",
-      "<strong>Our tank relocation services include:</strong> \
-       <ul class='list-disc pl-5 space-y-2 mt-2'> \
-         <li>Temporary relocation to facilitate groundwork without requiring work underneath the tank</li> \
-         <li>Moving the tank to a new pad within the existing berm</li> \
-       </ul>",
-      "<ul class='list-disc pl-5 space-y-2'> \
-        <li>Relocating the tank to a different area within the same tank farm</li> \
-        <li>Transporting the tank to an entirely new site</li> \
-         <li>Our certified, expert welders and specialized equipment ensure the job is completed accurately, efficiently, and with minimized downtime.</li> \
-         </ul>",
+      "<strong>lorem:</strong><br>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
+      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
+      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
+    ],
+  },
+  {
+    src: "https://picsum.photos/200",
+    title: "Lorem Ipsum 4",
+    shortDescription: "lorem ipsum dolor sit amet.",
+    longDescriptionSlides: [
+      "<strong>lorem:</strong><br>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
+      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
+      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
     ],
   },
 ];
