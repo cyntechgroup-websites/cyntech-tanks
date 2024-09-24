@@ -19,15 +19,14 @@
           <div class="mb-6 md:mb-0">
             <h4 class="font-semibold text-gray-700 mb-2">Get in touch</h4>
             <p class="text-[#1b3664]"><strong>T: </strong>403-228-1767</p>
-            <p class="text-[#1b3664] mb-4">
-              <strong>E: </strong>
-              <a
-                href="mailto:info@cyntechtanks.com"
-                class="text-[#1b3664] underline"
-                >info@cyntechtanks.com</a
-              >
-            </p>
-            <a href="#" class="text-[#1b3664] flex items-center font-semibold">
+            <button class="flex text-[#1b3664 mb-4 min-w-48" @click="copyEmail('info@cyntechtanks.com', 1)">
+              <strong class="text-[#1b3664] mr-1">E: </strong>
+              <span class="text-[#1b3664] underline block">
+                <span v-if="!copiedEmails[1]">info@cyntechtanks.com</span>
+                <span v-if="copiedEmails[1]">Email Copied!</span>
+              </span>
+            </button>
+            <a href="https://maps.app.goo.gl/L2ZKHS9J5qay5bQL9" class="text-[#1b3664] flex items-center font-semibold" target="_blank">
               <Icon icon="lucide:map" class="w-4 h-4 mr-2" /> View on map
             </a>
           </div>
@@ -81,15 +80,14 @@
           <div class="mb-6 md:mb-0">
             <h4 class="font-semibold text-gray-700 mb-2">Get in touch</h4>
             <p class="text-[#1b3664]"><strong>T: </strong>403-228-1767</p>
-            <p class="text-[#1b3664] mb-4">
-              <strong>E: </strong>
-              <a
-                href="mailto:info@cyntechtanks.com"
-                class="text-[#1b3664] underline"
-                >info@cyntechtanks.com</a
-              >
-            </p>
-            <a href="#" class="text-[#1b3664] flex items-cente font-semibold">
+            <button class="flex text-[#1b3664 mb-4 min-w-48" @click="copyEmail('info@cyntechtanks.com', 2)">
+              <strong class="text-[#1b3664] mr-1">E: </strong>
+              <span class="text-[#1b3664] underline block">
+                <span v-if="!copiedEmails[2]">info@cyntechtanks.com</span>
+                <span v-if="copiedEmails[2]">Email Copied!</span>
+              </span>
+            </button>
+            <a href="https://maps.app.goo.gl/9ST4izJuQLufX3Db9" class="text-[#1b3664] flex items-cente font-semibold" target="_blank">
               <Icon icon="lucide:map" class="w-4 h-4 mr-2" /> View on map
             </a>
           </div>
@@ -97,7 +95,7 @@
           <!-- Address -->
           <div class="mb-6 md:mb-0">
             <h4 class="font-semibold text-[#1b3664] mb-2">Address</h4>
-            <p class="text-[#1b3664]">
+            <p class="text-gray-500">
               6401-50 Ave <br />
               Bonnyville, AB T9N 2L9
             </p>
@@ -124,15 +122,14 @@
           <div class="mb-6 md:mb-0">
             <h4 class="font-semibold text-[#1b3664] mb-2">Get in touch</h4>
             <p class="text-[#1b3664]"><strong>T: </strong>936-206-7810</p>
-            <p class="text-[#1b3664] mb-4">
-              <strong>E: </strong>
-              <a
-                href="mailto:info@cyntechgroup.com"
-                class="text-[#1b3664] underline"
-                >info@cyntechgroup.com</a
-              >
-            </p>
-            <a href="#" class="text-[#1b3664] flex items-center font-semibold">
+            <button class="flex text-[#1b3664 mb-4 min-w-48" @click="copyEmail('info@cyntechgroup.com', 3)">
+              <strong class="text-[#1b3664] mr-1">E: </strong>
+              <span class="text-[#1b3664] underline block">
+                <span v-if="!copiedEmails[3]">info@cyntechgroup.com</span>
+                <span v-if="copiedEmails[3]">Email Copied!</span>
+              </span>
+            </button>
+            <a href="https://maps.app.goo.gl/teU8o3uaq8aQcid29" class="text-[#1b3664] flex items-center font-semibold" target="_blank">
               <Icon icon="lucide:map" class="w-4 h-4 mr-2" /> View on map
             </a>
           </div>
@@ -140,7 +137,7 @@
           <!-- Address -->
           <div class="mb-6 md:mb-0">
             <h4 class="font-semibold text-[#1b3664] mb-2">Address</h4>
-            <p class="text-[#1b3664]">
+            <p class="text-gray-500">
               17807 TX-105 <br />
               Plantersville, Texas 77363
             </p>
@@ -154,4 +151,26 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
+import { ref } from "vue";
+
+const copiedEmails = ref({
+  1: false,
+  2: false,
+  3: false
+});
+
+function copyEmail(email, buttonIndex) {
+  navigator.clipboard.writeText(email).then(() => {
+    // Reset all copied states first
+    copiedEmails.value = { 1: false, 2: false, 3: false };
+    
+    // Set copied state for the clicked button
+    copiedEmails.value[buttonIndex] = true;
+
+    // Reset after 1 second
+    setTimeout(() => {
+      copiedEmails.value[buttonIndex] = false;
+    }, 1000);
+  });
+}
 </script>
