@@ -3,8 +3,7 @@
     <div
       class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-fr"
     >
-
-    <article class="group">
+      <article class="group">
         <NuxtLink to="/engineering-services">
           <header>
             <hr
@@ -18,11 +17,13 @@
               class="absolute inset-0 w-[400px] h-[200px] bg-gray-100 transform origin-left rotate-45 -translate-y-[100px] -translate-x-[100px] md:group-hover:bg-[#E9EEF5]"
             ></div>
             <div class="relative z-10 flex-grow">
-              <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
-                Engineering Services
+              <h3 class="text-2xl font-medium text-[#1b3664] mb-4">
+                Inspection, Engineering and Design
               </h3>
-              <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus odit maxime facere aperiam et doloremque natus nemo provident quis deserunt?.
+              <p class="text-gray-600 mb-8 font-light min-h-28">
+                Cyntech can provide a complete turnkey service package including
+                all aspects of inspection, engineering and construction for any
+                tank modifications.
               </p>
               <footer>
                 <div
@@ -54,10 +55,10 @@
               class="absolute inset-0 w-[400px] h-[200px] bg-gray-100 transform origin-left rotate-45 -translate-y-[100px] -translate-x-[100px] md:group-hover:bg-[#E9EEF5]"
             ></div>
             <div class="relative z-10 flex-grow">
-              <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
+              <h3 class="text-2xl font-medium text-[#1b3664] mb-4">
                 Tank Cleaning
               </h3>
-              <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
+              <p class="text-gray-600 mb-8 font-light min-h-28">
                 We use the most innovative equipment and processes in the
                 industry to clean and gas-free your tank safely and
                 cost-effectively.
@@ -92,10 +93,10 @@
               class="absolute inset-0 w-[400px] h-[200px] bg-gray-100 transform origin-left rotate-45 -translate-y-[100px] -translate-x-[100px] md:group-hover:bg-[#E9EEF5]"
             ></div>
             <div class="relative z-10 flex-grow">
-              <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
+              <h3 class="text-2xl font-medium text-[#1b3664] mb-4">
                 Tank Foundations
               </h3>
-              <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
+              <p class="text-gray-600 mb-8 font-light min-h-28">
                 From concrete ring walls and concrete pads to deep foundations
                 and gravel ring walls, we have the experience to complete any
                 project safely and efficiently.
@@ -130,10 +131,10 @@
               class="absolute inset-0 w-[400px] h-[200px] bg-gray-100 transform origin-left rotate-45 -translate-y-[100px] -translate-x-[100px] md:group-hover:bg-[#E9EEF5]"
             ></div>
             <div class="relative z-10 flex-grow">
-              <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
+              <h3 class="text-2xl font-medium text-[#1b3664] mb-4">
                 Construction, Repair, and Maintenance
               </h3>
-              <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
+              <p class="text-gray-600 mb-8 font-light min-h-28">
                 We provide skilled personnel and specialized technology to
                 ensure your project is completed safely, efficiently, and to
                 your satisfaction.
@@ -168,10 +169,10 @@
               class="absolute inset-0 w-[400px] h-[200px] bg-gray-100 transform origin-left rotate-45 -translate-y-[100px] -translate-x-[100px] md:group-hover:bg-[#E9EEF5]"
             ></div>
             <div class="relative z-10 flex-grow">
-              <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
+              <h3 class="text-2xl font-medium text-[#1b3664] mb-4">
                 Lifting, Leveling, and Relocation
               </h3>
-              <p class="text-gray-600 mb-8 font-light md:text-xl min-h-28">
+              <p class="text-gray-600 mb-8 font-light min-h-28">
                 Whether lifting a tank to correct edge settlement, installing a
                 new foundation for secondary containment, or relocation, we
                 ensure your project is executed safely and cost-efficiently.

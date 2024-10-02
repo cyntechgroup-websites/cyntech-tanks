@@ -8,7 +8,7 @@
           class="relative w-full md:w-1/2 h-[300px] md:h-[400px] lg:h-[500px]"
         >
           <img
-            src="/images/tank-cleaning.webp"
+            src="/images/engineering-3.jpg"
             alt="Construction, Repair and Maintenance Hero Image"
             class="w-full h-full object-cover"
           />
@@ -19,10 +19,12 @@
           class="w-full md:w-1/2 px-10 pt-10 pb-10 min-h-[300px] md:min-h-[400px] lg:min-h-[500px] mx-auto flex justify-center flex-col"
         >
           <h2 class="text-[#fdc70c] text-3xl md:text-4xl font-semibold mb-4">
-            Engineering Services
+            Inspection, Engineering and Design
           </h2>
           <p class="text-white text-xl lg:text-2xl font-light leading-relaxed">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi harum id corporis ducimus iusto recusandae tenetur velit, libero maxime optio.
+            Cyntech can provide a complete turnkey service package including all
+            aspects of inspection, engineering and construction for any tank
+            modifications.
           </p>
         </article>
       </section>

@@ -12,7 +12,7 @@
             id="name"
             name="name"
             required
-            class="border-b-2 border-white mt-1 block w-full shadow-none min-h-10 bg-[#808080] bg-opacity-30"
+            class="block w-full shadow-none min-h-10 bg-[#808080] bg-opacity-30"
             :class="{ 'border-red-500': errors.name }"
           />
           <span class="text-red-500 font-bold text-xs" v-if="errors.name">{{
@@ -30,7 +30,7 @@
             id="email"
             name="email"
             required
-            class="border-b-2 border-white mt-1 block w-full shadow-none min-h-10 bg-[#808080] bg-opacity-30"
+            class="block w-full shadow-none min-h-10 bg-[#808080] bg-opacity-30"
             :class="{ 'border-red-500': errors.email }"
           />
           <span class="text-red-500 font-bold text-xs" v-if="errors.email">{{
@@ -47,7 +47,7 @@
             id="message"
             name="message"
             required
-            class="border-b-2 border-white mt-1 block w-full shadow-none min-h-52 bg-[#808080] bg-opacity-30"
+            class="mt-1 block w-full shadow-none min-h-52 bg-[#808080] bg-opacity-30"
             :class="{ 'border-red-500': errors.message }"
           ></textarea>
           <button

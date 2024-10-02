@@ -4,11 +4,11 @@
       <section
         class="flex flex-col md:flex-row-reverse items-center bg-gray-200 h-auto max-h-[250px]"
       >
-        <article class="hidden md:relative md:block w-full md:w-1/2 h-[250px]">
+        <article class="absolute opacity-15 md:opacity-100 md:relative md:block w-full md:w-1/2 h-[250px] z-0">
           <img
             src="/images/contact-hero.jpg"
             alt="Slide 1 Image"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover object-center"
           />
           <div class="absolute inset-0 bg-gray-200 clip-triangle"></div>
         </article>

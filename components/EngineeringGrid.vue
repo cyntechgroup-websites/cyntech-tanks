@@ -194,16 +194,16 @@ onMounted(() => {
 // Array of gallery images with src, title, short description, and long description slides
 const galleryImages = [
   {
-    src: "https://picsum.photos/200",
-    title: "Lorem Ipsum 1",
+    src: "images/engineering-7.jpg",
+    title: "Inspection",
     shortDescription: "lorem ipsum dolor sit amet.",
     longDescriptionSlides: [
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
     ],
   },
   {
-    src: "https://picsum.photos/200",
-    title: "Lorem Ipsum 2",
+    src: "images/engineering-1.jpg",
+    title: "Engineering",
     shortDescription: "lorem ipsum dolor sit amet.",
     longDescriptionSlides: [
       "<strong>lorem:</strong><br>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
@@ -212,8 +212,8 @@ const galleryImages = [
     ],
   },
   {
-    src: "https://picsum.photos/200",
-    title: "Lorem Ipsum 3",
+    src: "images/engineering-6.jpg",
+    title: "Design",
     shortDescription: "lorem ipsum dolor sit amet.",
     longDescriptionSlides: [
       "<strong>lorem:</strong><br>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",

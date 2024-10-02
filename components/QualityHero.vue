@@ -4,7 +4,7 @@
       <section
         class="flex flex-col md:flex-row-reverse items-center bg-gray-200 h-auto max-h-[250px]"
       >
-        <article class="hidden md:relative md:block w-full md:w-1/2 h-[250px]">
+        <article class="absolute opacity-15 md:opacity-100 md:relative md:block w-full md:w-1/2 h-[250px] z-0">
           <img
             src="/images/quality-hero.jpg"
             alt="Slide 1 Image"

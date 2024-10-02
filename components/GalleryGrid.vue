@@ -1,60 +1,52 @@
 <template>
   <section
-    class="flex flex-col lg:py-12 py-2 px-6 md:px-14 justify-center lg:min-w-full items-center mb-20 lg:mb-4 mt-8"
+    class="flex flex-col lg:py-12 py-2 max-w-96 mx-auto md:mx-0 md:max-w-full md:px-14 justify-center lg:min-w-full items-center mb-20 lg:mb-4 mt-8"
   >
     <div
       class="grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-[1fr] mx-auto lg:mx-0"
     >
       <!-- Gallery Items -->
-      <article
-        v-for="(image, index) in galleryImages"
-        :key="index"
-        class="group lg:w-[420px] cursor-pointer flex flex-col h-full"
-        @click="openGallery(index)"
-      >
-        <!-- Responsive Image Container -->
-        <div
-          class="relative overflow-hidden mx-auto aspect-square md:aspect-video"
-        >
-          <img
-            :src="image.slides[0].src"
-            :alt="image.title"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <header>
-          <hr
-            class="h-[2px] w-52 bg-[#fdc70c] my-4 translate-x-10 md:group-hover:bg-[#1b3664]"
-          />
-        </header>
-        <section
-          class="relative p-8 transition-all duration-300 overflow-hidden flex-grow flex flex-col"
-        >
-          <div
-            class="absolute inset-0 w-[400px] h-[200px] bg-gray-100 transform origin-left rotate-45 -translate-y-[100px] -translate-x-[100px] md:group-hover:bg-[#E9EEF5]"
-          ></div>
-          <div class="relative z-10 flex-grow">
-            <h3 class="text-2xl md:text-3xl font-medium text-[#1b3664] mb-4">
-              {{ image.title }}
-            </h3>
-            <p class="text-gray-600 mb-8 font-light md:text-xl max-w-80">
-              {{ image.shortDescription }}
-            </p>
-            <footer>
-              <a
-                href="#"
-                class="text-[#1b3664] font-normal flex items-center space-x-2"
-              >
-                <span>See More</span>
-                <span
-                  class="text-xl md:group-hover:translate-x-4 transition-transform duration-300 ease-in-out"
-                  >→</span
-                >
-              </a>
-            </footer>
-          </div>
-        </section>
-      </article>
+      <!-- Gallery Items -->
+<article
+  v-for="(image, index) in galleryImages"
+  :key="index"
+  class="group lg:w-[420px] cursor-pointer flex flex-col h-full relative"
+  @click="openGallery(index)"
+>
+  <!-- Responsive Image Container -->
+  <div class="relative overflow-hidden mx-auto aspect-square">
+    <img
+      :src="image.slides[0].src"
+      :alt="image.title"
+      class="w-full h-full object-cover border-2 border-[#1b3664]"
+    />
+    <!-- Slide-in Section -->
+    <section
+      class="absolute bottom-0 left-0 w-full md:h-1/2 h-1/4 bg-white border-t-2 border-[#1b3664] p-2 flex items-center justify-between
+        transition-all duration-300 ease-in-out md:transform md:translate-y-full md:group-hover:translate-y-0"
+    >
+      <div class="flex flex-col z-10 flex-grow justify-center">
+        <h3 class="text-xl font-medium text-[#1b3664] mb-2">{{ image.title }}</h3>
+        <p class="hidden md:block text-gray-600 mb-4 font-light max-w-80">
+          {{ image.shortDescription }}
+        </p>
+        <footer>
+          <a
+            href="#"
+            class="text-gray-500 font-normal flex items-center space-x-2"
+          >
+            <span>See More</span>
+            <span
+              class="text-xl transition-transform duration-300 ease-in-out text-[#fdc70c]"
+              >→</span
+            >
+          </a>
+        </footer>
+      </div>
+    </section>
+  </div>
+</article>
+
     </div>
 
     <!-- Modal for Gallery -->
@@ -99,33 +91,31 @@
 
         <div class="flex flex-col justify-between">
           <!-- Dots for slide navigation -->
-          <div
-              class="flex justify-center space-x-2 mt-4 items-center min-h-10"
+          <div class="flex justify-center space-x-2 mt-4 items-center min-h-10">
+            <button
+              v-if="currentImage.slides.length > 1"
+              @click="prevSlide"
+              class="text-[#1b3664] text-2xl"
             >
-              <button
-                v-if="currentImage.slides.length > 1"
-                @click="prevSlide"
-                class="text-[#1b3664] text-2xl"
-              >
-                ←
-              </button>
-              <span
-                v-for="(slide, index) in currentImage.slides"
-                :key="index"
-                class="h-2 w-2 rounded-full"
-                :class="
-                  index === currentSlideIndex ? 'bg-[#fdc70c]' : 'bg-gray-400'
-                "
-                @click="goToSlide(index)"
-              ></span>
-              <button
-                v-if="currentImage.slides.length > 1"
-                @click="nextSlide"
-                class="text-[#1b3664] text-2xl"
-              >
-                →
-              </button>
-            </div>
+              ←
+            </button>
+            <span
+              v-for="(slide, index) in currentImage.slides"
+              :key="index"
+              class="h-2 w-2 rounded-full"
+              :class="
+                index === currentSlideIndex ? 'bg-[#fdc70c]' : 'bg-gray-400'
+              "
+              @click="goToSlide(index)"
+            ></span>
+            <button
+              v-if="currentImage.slides.length > 1"
+              @click="nextSlide"
+              class="text-[#1b3664] text-2xl"
+            >
+              →
+            </button>
+          </div>
           <!-- Sliding description content -->
           <div class="relative w-full overflow-hidden">
             <!-- Title and yellow line stay in place -->

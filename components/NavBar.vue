@@ -157,7 +157,7 @@
                 <!-- Links to services -->
                 <NuxtLink to="/engineering-services" @click="closeSubMenu"
                   ><li class="p-4 text-[#1b3664] hover:bg-gray-300">
-                    Engineering Services
+                    Inspection, Engineering and Design
                   </li></NuxtLink
                 >
                 <NuxtLink to="/construction-maintenance" @click="closeSubMenu"
@@ -430,7 +430,7 @@
               v-if="subMenu === 'services'"
               class="border-b border-gray-400 p-4"
             >
-              Engineering Services
+              Inspection, Engineering and Design
             </li>
           </NuxtLink>
           <NuxtLink
