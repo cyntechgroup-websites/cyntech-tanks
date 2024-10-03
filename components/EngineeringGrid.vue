@@ -17,7 +17,7 @@
           class="relative overflow-hidden mx-auto aspect-square md:aspect-video max-w-[400px]"
         >
           <img
-            :src="image.src"
+            :src="image.slides ? image.slides[0].src : image.src"
             :alt="image.title"
             class="w-full h-full object-cover"
           />
@@ -79,7 +79,7 @@
           class="relative overflow-hidden aspect-square md:aspect-video w-full h-auto"
         >
           <img
-            :src="currentImage.src"
+            :src="currentImage.slides[currentSlideIndex].src"
             alt="Gallery Image"
             class="w-full h-full object-cover overflow-hidden"
           />
@@ -98,70 +98,50 @@
         </div>
 
         <div class="flex flex-col justify-between">
-          <!-- Sliding description content -->
-          <div class="relative w-full overflow-hidden mt-4">
-            <!-- Title and yellow line stay in place -->
-             <div class="w-full flex-shrink-0 p-4">
-            <header>
-              <hr
-                class="h-[2px] bg-[#fdc70c] my-4 xs:translate-x-5 mx-auto xs:max-w-80 max-w-72 xs:mx-4"
-              />
-            </header>
-
-            <h2 class="text-[#1b3664] text-2xl mb-4 mt-2 px-0 xs:px-4">
-              {{ currentImage.title }}
-            </h2>
-
-            <!-- Only the description slides -->
-            <div class="relative w-full overflow-hidden">
-              <div
-                class="flex transition-transform duration-500"
-                :style="{
-                  transform: `translateX(-${currentSlideIndex * 100}%)`,
-                }"
-              >
-                <div
-                  v-for="(content, index) in currentImage.longDescriptionSlides"
-                  :key="index"
-                  class="w-full flex-shrink-0"
-                >
-                  <!-- Long description for each slide -->
-                  <p
-                    class="text-gray-700 text-lg px-0 xs:px-4"
-                    v-html="content"
-                  ></p>
-                </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Dots for slide navigation -->
-            <div
-              class="flex justify-center space-x-2 mt-4 items-center min-h-10"
+          <!-- Dots for slide navigation -->
+          <div class="flex justify-center space-x-2 mt-4 items-center min-h-10">
+            <button
+              v-if="currentImage.slides.length > 1"
+              @click="prevSlide"
+              class="text-[#1b3664] text-2xl"
             >
-              <button
-                v-if="currentImage.longDescriptionSlides.length > 1"
-                @click="prevSlide"
-                class="text-[#1b3664] text-2xl"
-              >
-                ←
-              </button>
-              <span
-                v-for="(content, index) in currentImage.longDescriptionSlides"
-                :key="index"
-                class="h-2 w-2 rounded-full"
-                :class="
-                  index === currentSlideIndex ? 'bg-[#fdc70c]' : 'bg-gray-400'
-                "
-                @click="goToSlide(index)"
-              ></span>
-              <button
-                v-if="currentImage.longDescriptionSlides.length > 1"
-                @click="nextSlide"
-                class="text-[#1b3664] text-2xl"
-              >
-                →
-              </button>
+              ←
+            </button>
+            <span
+              v-for="(slide, index) in currentImage.slides"
+              :key="index"
+              class="h-2 w-2 rounded-full"
+              :class="
+                index === currentSlideIndex ? 'bg-[#fdc70c]' : 'bg-gray-400'
+              "
+              @click="goToSlide(index)"
+            ></span>
+            <button
+              v-if="currentImage.slides.length > 1"
+              @click="nextSlide"
+              class="text-[#1b3664] text-2xl"
+            >
+              →
+            </button>
+          </div>
+          <!-- Sliding description content -->
+          <div class="relative w-full overflow-hidden">
+            <!-- Title and yellow line stay in place -->
+            <div class="w-full flex-shrink-0 p-4">
+              <header>
+                <hr
+                  class="h-[2px] bg-[#fdc70c] mb-4 xs:translate-x-5 mx-auto xs:max-w-80 max-w-72 xs:mx-4"
+                />
+              </header>
+
+              <h2 class="text-[#1b3664] text-2xl mb-4 mt-2 px-0 xs:px-4">
+                {{ currentImage.title }}
+              </h2>
+
+              <!-- Only the description stays static -->
+              <p class="text-gray-700 text-lg px-0 xs:px-4">
+                {{ currentImage.description }}
+              </p>
             </div>
           </div>
         </div>
@@ -194,27 +174,31 @@ onMounted(() => {
 // Array of gallery images with src, title, short description, and long description slides
 const galleryImages = [
   {
-    src: "images/inspection.jpg",
     title: "Inspection",
     shortDescription: "API Aboveground Storage Tank Certified Inspection.",
-    longDescriptionSlides: [
-      "API Aboveground Storage Tank Certified Inspection.",
+    description: "API Aboveground Storage Tank Certified Inspection.",
+    slides: [
+      { src: "/images/inspection.jpg" },
     ],
   },
   {
-    src: "images/engineering-1.jpg",
     title: "Engineering",
-    shortDescription: "Engineering and Drafting services for API 650/653 AST's.",
-    longDescriptionSlides: [
+    shortDescription:
       "Engineering and Drafting services for API 650/653 AST's.",
+    description:
+      "Engineering and Drafting services for API 650/653 AST's.",
+    slides: [
+      { src: "images/engineering-1.jpg", },
     ],
   },
   {
-    src: "images/design.jpg",
     title: "Design",
-    shortDescription: "Design and Construction of API 650 Aboveground Storage Tanks.",
-    longDescriptionSlides: [
+    shortDescription:
       "Design and Construction of API 650 Aboveground Storage Tanks.",
+    description:
+      "Design and Construction of API 650 Aboveground Storage Tanks.",
+    slides: [
+      { src: "images/design.jpg", },
     ],
   },
 ];
@@ -244,13 +228,12 @@ const prevSlide = () => {
   currentSlideIndex.value =
     currentSlideIndex.value > 0
       ? currentSlideIndex.value - 1
-      : currentImage.value.longDescriptionSlides.length - 1;
+      : currentImage.value.slides.length - 1;
 };
 
 const nextSlide = () => {
   currentSlideIndex.value =
-    currentSlideIndex.value <
-    currentImage.value.longDescriptionSlides.length - 1
+    currentSlideIndex.value < currentImage.value.slides.length - 1
       ? currentSlideIndex.value + 1
       : 0;
 };
