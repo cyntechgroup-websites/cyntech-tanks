@@ -166,8 +166,8 @@ onMounted(() => {
 const galleryImages = [
   {
     title: "Automated Welding",
-    shortDescription: "Placeholder Automated Welding.",
-    description: "Placeholder Automated Welding.",
+    shortDescription: "Robotic and Track Welding Processes.",
+    description: "Robotic and Track Welding Processes.",
     slides: [
       { src: "/images/automated-welding-1.jpg" },
       { src: "/images/automated-welding-2.jpg" },

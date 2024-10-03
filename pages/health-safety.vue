@@ -75,7 +75,7 @@
             <img
               src="/public/images/health-and-safety.webp"
               alt="Health and Safety"
-              class="md:w-full w-full my-8 object-cover border-4 shadow-md border-[#1b3664]"
+              class="md:w-full w-full my-8 object-cover shadow-lg rounded-sm"
             />
           </div>
         </section>
