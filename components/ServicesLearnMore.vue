@@ -156,7 +156,7 @@
       </article>
 
       <article class="group">
-        <NuxtLink to="/lifting-leveling">
+        <NuxtLink to="/lifting-relocation">
           <header>
             <hr
               class="h-[2px] w-52 bg-[#fdc70c] mb-4 translate-x-10 md:group-hover:bg-[#1b3664]"
