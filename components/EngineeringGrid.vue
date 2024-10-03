@@ -189,6 +189,12 @@ const galleryImages = [
       "Engineering and Drafting services for API 650/653 AST's.",
     slides: [
       { src: "images/engineering-1.jpg", },
+      { src: "images/engineering-2.jpg", },
+      { src: "images/engineering-3.jpg", },
+      { src: "images/engineering-4.jpg", },
+      { src: "images/engineering-5.jpg", },
+      { src: "images/engineering-6.jpg", },
+      { src: "images/engineering-7.jpg", },
     ],
   },
   {
