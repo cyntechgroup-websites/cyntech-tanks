@@ -3,50 +3,49 @@
     class="flex flex-col lg:py-12 py-2 max-w-96 mx-auto md:mx-0 md:max-w-full md:px-14 justify-center lg:min-w-full items-center mb-20 lg:mb-4 mt-8"
   >
     <div
-      class="grid grid-cols-1 md:grid-cols-2 gap-20 auto-rows-[1fr] mx-auto lg:mx-0"
+      class="grid grid-cols-1 md:grid-cols-2 gap-10 auto-rows-[1fr] mx-auto lg:mx-0"
     >
       <!-- Gallery Items -->
-      <!-- Gallery Items -->
-<article
-  v-for="(image, index) in galleryImages"
-  :key="index"
-  class="group lg:w-[420px] cursor-pointer flex flex-col h-full relative"
-  @click="openGallery(index)"
->
-  <!-- Responsive Image Container -->
-  <div class="relative overflow-hidden mx-auto aspect-square">
-    <img
-      :src="image.slides[0].src"
-      :alt="image.title"
-      class="w-full h-full object-cover border-2 border-[#1b3664]"
-    />
-    <!-- Slide-in Section -->
-    <section
-      class="absolute bottom-0 left-0 w-full md:h-1/2 h-1/4 bg-white border-t-2 border-[#1b3664] p-2 flex items-center justify-between
-        transition-all duration-300 ease-in-out md:transform md:translate-y-full md:group-hover:translate-y-0"
-    >
-      <div class="flex flex-col z-10 flex-grow justify-center">
-        <h3 class="text-xl font-medium text-[#1b3664] mb-2">{{ image.title }}</h3>
-        <p class="hidden md:block text-gray-600 mb-4 font-light max-w-80">
-          {{ image.shortDescription }}
-        </p>
-        <footer>
-          <a
-            href="#"
-            class="text-gray-500 font-normal flex items-center space-x-2"
+      <article
+        v-for="(image, index) in galleryImages"
+        :key="index"
+        class="group lg:w-[420px] cursor-pointer flex flex-col h-full relative"
+        @click="openGallery(index)"
+      >
+        <!-- Responsive Image Container -->
+        <div class="relative overflow-hidden mx-auto aspect-square shadow-lg rounded-sm">
+          <img
+            :src="image.slides[0].src"
+            :alt="image.title"
+            class="w-full h-full object-cover"
+          />
+          <!-- Slide-in Section -->
+          <section
+            class="absolute bottom-0 left-0 w-full md:h-1/2 h-1/4 bg-white p-2 flex items-center justify-between transition-all duration-300 ease-in-out md:transform md:translate-y-full md:group-hover:translate-y-0 lg:pl-10 md:pl-4"
           >
-            <span>See More</span>
-            <span
-              class="text-xl transition-transform duration-300 ease-in-out text-[#fdc70c]"
-              >→</span
-            >
-          </a>
-        </footer>
-      </div>
-    </section>
-  </div>
-</article>
-
+            <div class="flex flex-col z-10 flex-grow justify-center">
+              <h3 class="text-base font-medium text-[#1b3664] mb-2">
+                {{ image.title }}
+              </h3>
+              <p class="hidden md:block text-gray-600 mb-4 font-light max-w-80">
+                {{ image.shortDescription }}
+              </p>
+              <footer>
+                <a
+                  href="#"
+                  class="text-gray-500 font-normal flex items-center space-x-2"
+                >
+                  <span class="text-sm">See More</span>
+                  <span
+                    class="text-sm transition-transform duration-300 ease-in-out text-[#fdc70c]"
+                    >→</span
+                  >
+                </a>
+              </footer>
+            </div>
+          </section>
+        </div>
+      </article>
     </div>
 
     <!-- Modal for Gallery -->
@@ -181,8 +180,7 @@ const galleryImages = [
     shortDescription: "Before and After of a Tank Isolation Cleaning.",
     description: "Before and After of a Tank Isolation Cleaning.",
     slides: [
-      { src: "/images/gallery-1.webp" },
-      { src: "/images/gallery-1-alt.webp" }, // Add extra slides here
+      { src: "/images/gallery-1.webp" }, // Add extra slides here
     ],
   },
   {
@@ -220,13 +218,13 @@ const galleryImages = [
     title: "Shell Course Repair and Replacement",
     shortDescription: "An inside look on how the shell is replaced.",
     description: "An inside look on how the shell is replaced.",
-    slides: [{ src: "/images/shell-repair.webp" }],
+    slides: [{ src: "/images/shell-repair.jpg" }],
   },
   {
     title: "Door & Insert Sheets",
     shortDescription: "See the door sheets on the tanks.",
     description: "See the door sheets on the tanks.",
-    slides: [{ src: "/images/door-insert-sheets.webp" }],
+    slides: [{ src: "/images/door-insert-sheets.jpg" }],
   },
   {
     title: "Roof Repair and Replacement",
@@ -247,8 +245,8 @@ const galleryImages = [
   },
   {
     title: "Coatings",
-    shortDescription: "Placeholder Coatings.",
-    description: "Placeholder Coatings.",
+    shortDescription: "Coating Preparation and Application.",
+    description: "Coating Preparation and Application.",
     slides: [
       { src: "/images/coating-1.jpg" },
       { src: "/images/coating-2.jpg" },

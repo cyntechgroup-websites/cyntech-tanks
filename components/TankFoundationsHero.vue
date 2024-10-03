@@ -8,8 +8,8 @@
           class="relative w-full md:w-1/2 h-[300px] md:h-[400px] lg:h-[500px]"
         >
           <img
-            src="/images/quality-image.webp"
-            alt="Slide 1 Image"
+            src="/images/foundations-hero.jpg"
+            alt="Tank Foundations Image"
             class="w-full h-full object-cover"
           />
           <div class="absolute inset-0 bg-[#1b3664] clip-triangle"></div>

@@ -8,11 +8,13 @@
         be part of the Cyntech Tanks team, send us your resume.
       </h2>
       <div class="flex justify-start">
+        <NuxtLink to="/contact-us">
         <button
           class="bg-[#1b3664] text-white px-6 py-3 md:hover:bg-gray-200 md:hover:text-[#1b3664] md:hover:border-[#1b3664] md:border-[#1b3664] md:border-2"
         >
           Send Us Your Resume
         </button>
+      </NuxtLink>
       </div>
     </div>
     <div

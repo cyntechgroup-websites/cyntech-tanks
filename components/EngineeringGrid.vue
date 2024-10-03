@@ -14,7 +14,7 @@
       >
         <!-- Responsive Image Container -->
         <div
-          class="relative overflow-hidden max-w-96 max-h-96 aspect-square md:aspect-video"
+          class="relative overflow-hidden mx-auto aspect-square md:aspect-video max-w-[400px]"
         >
           <img
             :src="image.src"
@@ -194,41 +194,27 @@ onMounted(() => {
 // Array of gallery images with src, title, short description, and long description slides
 const galleryImages = [
   {
-    src: "images/engineering-7.jpg",
+    src: "images/inspection.jpg",
     title: "Inspection",
-    shortDescription: "lorem ipsum dolor sit amet.",
+    shortDescription: "API Aboveground Storage Tank Certified Inspection.",
     longDescriptionSlides: [
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
+      "API Aboveground Storage Tank Certified Inspection.",
     ],
   },
   {
     src: "images/engineering-1.jpg",
     title: "Engineering",
-    shortDescription: "lorem ipsum dolor sit amet.",
+    shortDescription: "Engineering and Drafting services for API 650/653 AST's.",
     longDescriptionSlides: [
-      "<strong>lorem:</strong><br>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
-      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
-      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
+      "Engineering and Drafting services for API 650/653 AST's.",
     ],
   },
   {
-    src: "images/engineering-6.jpg",
+    src: "images/design.jpg",
     title: "Design",
-    shortDescription: "lorem ipsum dolor sit amet.",
+    shortDescription: "Design and Construction of API 650 Aboveground Storage Tanks.",
     longDescriptionSlides: [
-      "<strong>lorem:</strong><br>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
-      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
-      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
-    ],
-  },
-  {
-    src: "https://picsum.photos/200",
-    title: "Lorem Ipsum 4",
-    shortDescription: "lorem ipsum dolor sit amet.",
-    longDescriptionSlides: [
-      "<strong>lorem:</strong><br>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed etiam luctus magna.",
-      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
-      "<strong>lorem ipsum dolor sit amet:</strong><br>lorem ipsum dolor sit amet.",
+      "Design and Construction of API 650 Aboveground Storage Tanks.",
     ],
   },
 ];

@@ -194,15 +194,7 @@ onMounted(() => {
 // Array of gallery images with src, title, short description, and long description slides
 const galleryImages = [
   {
-    src: "/images/rotary-jet.webp",
-    title: "Rotary Jet System",
-    shortDescription: "Water-saving, efficient cleaning.",
-    longDescriptionSlides: [
-      "Cyntech employs rotary jet heads for efficient tank cleaning, which minimizes the use of water and chemicals.",
-    ],
-  },
-  {
-    src: "/images/pressure-cleaning.webp",
+    src: "/images/robo-cannon.jpg",
     title: "Pressure Cleaning",
     shortDescription: "Removes oil and grime.",
     longDescriptionSlides: [
