@@ -153,7 +153,6 @@
       v-if="isGalleryOpen"
       class="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-lg z-40"
     ></div>
-    a
   </section>
 </template>
 
