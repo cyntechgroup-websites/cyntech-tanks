@@ -8,7 +8,7 @@
         <!-- Links to office locations and contact info -->
         <div class="flex items-center gap-4">
           <NuxtLink
-            to="https://landing-page-development-cyntech.vercel.app/"
+            to="https://www.cyntech.com"
             class="group hover:bg-gray-300/30 py-4 px-2"
           >
             <div class="flex items-center">
@@ -359,7 +359,7 @@
             </li>
           </NuxtLink>
           <NuxtLink
-            to="https://landing-page-development-cyntech.vercel.app/"
+            to="https://www.cyntech.com"
             @click="closeMenu"
           >
             <li class="p-4 bg-white border-b border-gray-400">
