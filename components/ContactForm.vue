@@ -1,9 +1,11 @@
 <template>
   <div class="pb-4 min-w-full">
-    <form action="https://formspree.io/f/mldrknba" method="POST">
-      <div
-        class="flex flex-col mt-4 m-8 pt-4 max-w-5xl mx-auto"
-      >
+    <form
+      action="https://formspree.io/f/mldrknba"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <div class="flex flex-col mt-4 m-8 pt-4 max-w-5xl mx-auto">
         <div class="mb-4 pr-6 pl-6">
           <label for="name" class="block font-bold text-[#1b3664]">Name</label>
           <input
@@ -52,7 +54,7 @@
           ></textarea>
           <button
             type="submit"
-            class="mt-2 text-base bg-[#1b3664] text-white p-4 md:hover:bg-[#FFC107] md:hover:text-[#1b3664] flex text-center justify-center"
+            class="mt-4 text-base bg-[#1b3664] text-white p-4 md:hover:bg-[#FFC107] md:hover:text-[#1b3664] flex text-center justify-center"
           >
             Send Message
           </button>
