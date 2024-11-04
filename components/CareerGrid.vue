@@ -36,79 +36,82 @@
     </div>
 
     <!-- Form Section -->
-    <form
-      v-if="isFormOpen"
-      action="https://formspree.io/f/mbljgvqq"
-      method="POST"
-      enctype="multipart/form-data"
-      @submit="validateForm"
-      class="flex flex-col max-w-4xl mx-auto mb-14"
-    >
-      <!-- Name Input Field -->
-      <div class="mb-4 pr-6 pl-6">
-        <label for="name" class="block font-bold text-[#1b3664]">Name</label>
-        <input
-          v-model="name"
-          type="text"
-          id="name"
-          name="name"
-          required
-          class="block w-full shadow-none min-h-10 bg-[#808080] bg-opacity-30"
-          :class="{ 'border-red-500': errors.name }"
-        />
-        <span class="text-red-500 font-bold text-xs" v-if="errors.name">
-          {{ errors.name }}
-        </span>
-      </div>
+    <div v-if="isFormOpen" class="flex justify-center w-full mb-16">
+      <form
+        action="https://formspree.io/f/mbljgvqq"
+        method="POST"
+        enctype="multipart/form-data"
+        @submit="validateForm"
+        class="flex flex-col w-full max-w-2xl"
+      >
+        <!-- Name Input Field -->
+        <div class="mb-4 px-6">
+          <label for="name" class="block font-bold text-[#1b3664]">Name</label>
+          <input
+            v-model="name"
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="block w-full shadow-none min-h-10 bg-[#808080] bg-opacity-30"
+            :class="{ 'border border-red-500': errors.name }"
+          />
+          <span class="text-red-500 font-bold text-xs" v-if="errors.name">
+            {{ errors.name }}
+          </span>
+        </div>
 
-      <!-- Email Input Field -->
-      <div class="mb-4 pr-6 pl-6">
-        <label for="email" class="block font-bold text-[#1b3664]">Email</label>
-        <input
-          v-model="email"
-          type="email"
-          id="email"
-          name="email"
-          required
-          class="block w-full shadow-none min-h-10 bg-[#808080] bg-opacity-30"
-          :class="{ 'border-red-500': errors.email }"
-        />
-        <span class="text-red-500 font-bold text-xs" v-if="errors.email">
-          {{ errors.email }}
-        </span>
-      </div>
+        <!-- Email Input Field -->
+        <div class="mb-4 px-6">
+          <label for="email" class="block font-bold text-[#1b3664]"
+            >Email</label
+          >
+          <input
+            v-model="email"
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="block w-full shadow-none min-h-10 bg-[#808080] bg-opacity-30"
+            :class="{ 'border border-red-500': errors.email }"
+          />
+          <span class="text-red-500 font-bold text-xs" v-if="errors.email">
+            {{ errors.email }}
+          </span>
+        </div>
 
-      <!-- Resume Upload Input Field -->
-      <div class="mb-4 pr-6 pl-6">
-        <label for="resumeUpload" class="block font-bold text-[#1b3664]"
-          >Upload Your Resume</label
-        >
-        <input
-          type="file"
-          name="resumeUpload"
-          accept=".pdf,.doc,.docx"
-          @change="handleFileChange"
-          required
-          class="mb-2"
-        />
-        <span
-          class="text-red-500 font-bold text-xs"
-          v-if="errors.resumeUpload"
-        >
-          {{ errors.resumeUpload }}
-        </span>
-      </div>
+        <!-- Resume Upload Input Field -->
+        <div class="mb-4 px-6 flex flex-col">
+          <label for="resumeUpload" class="block font-bold text-[#1b3664] mb-2"
+            >Upload Your Resume</label
+          >
+          <input
+            type="file"
+            name="resumeUpload"
+            accept=".pdf,.doc,.docx"
+            @change="handleFileChange"
+            required
+            class="mb-2"
+          />
+          <span
+            class="text-red-500 font-bold text-xs"
+            v-if="errors.resumeUpload"
+          >
+            {{ errors.resumeUpload }}
+          </span>
+        </div>
 
-      <!-- Submit Button -->
-      <div class="pr-6 pl-6">
-        <button
-          type="submit"
-          class="mt-2 text-base bg-[#1b3664] text-white p-4 md:hover:bg-[#FFC107] md:hover:text-[#1b3664] flex text-center justify-center"
-        >
-          Send Resume
-        </button>
-      </div>
-    </form>
+        <!-- Submit Button -->
+        <div class="px-6">
+          <button
+            type="submit"
+            class="mt-2 text-base bg-[#1b3664] text-white p-4 w-full hover:bg-[#FFC107] hover:text-[#1b3664] flex justify-center"
+          >
+            Send Resume
+          </button>
+        </div>
+      </form>
+    </div>
 
     <!-- Job Positions Grid -->
     <section
@@ -188,58 +191,58 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
-import { useForm, useField } from 'vee-validate';
-import * as yup from 'yup';
+import { ref, computed } from "vue";
+import { useForm, useField } from "vee-validate";
+import * as yup from "yup";
 
 // Job positions with title, short description, and long description
 const jobPositions = [
   {
-    title: 'General Laborer',
+    title: "General Laborer",
     shortDescription:
-      'Labourer position for our Aboveground Storage Tank Repair projects.',
+      "Labourer position for our Aboveground Storage Tank Repair projects.",
     longDescription:
-      'This is a general labourer position working on Aboveground Storage Tank (AST) repair projects. Responsibilities include assisting tradespeople, moving materials, site cleaning, and adhering to safety protocols.',
+      "This is a general labourer position working on Aboveground Storage Tank (AST) repair projects. Responsibilities include assisting tradespeople, moving materials, site cleaning, and adhering to safety protocols.",
   },
   {
-    title: 'Safety Advisor',
+    title: "Safety Advisor",
     shortDescription:
-      'Role for keeping the company abreast of changes in safety laws and regulations.',
+      "Role for keeping the company abreast of changes in safety laws and regulations.",
     longDescription:
-      'As a safety advisor, you will be responsible for ensuring the company complies with health and safety laws. You will conduct site inspections, develop safety policies, and provide training to staff.',
+      "As a safety advisor, you will be responsible for ensuring the company complies with health and safety laws. You will conduct site inspections, develop safety policies, and provide training to staff.",
   },
   {
-    title: 'Site Supervisor',
+    title: "Site Supervisor",
     shortDescription:
-      'Site Supervisor Position for our Aboveground Storage Tank Repair projects.',
+      "Site Supervisor Position for our Aboveground Storage Tank Repair projects.",
     longDescription:
-      'The Site Supervisor will oversee all aspects of site operations for AST repair projects. Key responsibilities include managing the workforce, ensuring project milestones are met, and maintaining compliance with safety regulations.',
+      "The Site Supervisor will oversee all aspects of site operations for AST repair projects. Key responsibilities include managing the workforce, ensuring project milestones are met, and maintaining compliance with safety regulations.",
   },
   {
-    title: 'Welder',
+    title: "Welder",
     shortDescription:
-      'Welder position for the Aboveground Storage Tank Repair projects.',
+      "Welder position for the Aboveground Storage Tank Repair projects.",
     longDescription:
-      'This welder position is specific to AST repair projects. You will be responsible for welding tank components, adhering to safety protocols, and working collaboratively with the site supervisor and engineers.',
+      "This welder position is specific to AST repair projects. You will be responsible for welding tank components, adhering to safety protocols, and working collaboratively with the site supervisor and engineers.",
   },
   {
-    title: 'Quality Assurance/Quality Control',
-    shortDescription: 'Position for API Aboveground Storage Tank Inspector.',
+    title: "Quality Assurance/Quality Control",
+    shortDescription: "Position for API Aboveground Storage Tank Inspector.",
     longDescription:
-      'The QA/QC inspector will be responsible for conducting quality assurance checks and ensuring compliance with API 653 standards. Duties include inspecting materials, welding quality, and ensuring tank repairs are conducted to the highest standards.',
+      "The QA/QC inspector will be responsible for conducting quality assurance checks and ensuring compliance with API 653 standards. Duties include inspecting materials, welding quality, and ensuring tank repairs are conducted to the highest standards.",
   },
   {
-    title: 'Project Engineer',
-    shortDescription: 'Project Engineer position for Civil Engineers.',
+    title: "Project Engineer",
+    shortDescription: "Project Engineer position for Civil Engineers.",
     longDescription:
-      'As a project engineer, you will work closely with the site supervisor and other engineers to ensure all engineering aspects of the AST repair projects are completed to specification. You will also manage engineering teams, liaise with clients, and provide project updates.',
+      "As a project engineer, you will work closely with the site supervisor and other engineers to ensure all engineering aspects of the AST repair projects are completed to specification. You will also manage engineering teams, liaise with clients, and provide project updates.",
   },
   {
-    title: 'Vacuum Truck Operator',
+    title: "Vacuum Truck Operator",
     shortDescription:
-      'Vacuum truck operator position for our Aboveground Storage Tank Cleaning projects.',
+      "Vacuum truck operator position for our Aboveground Storage Tank Cleaning projects.",
     longDescription:
-      'This position involves operating vacuum trucks for AST cleaning projects. Responsibilities include driving the truck, operating the vacuum equipment, and ensuring proper disposal of waste materials while adhering to safety protocols.',
+      "This position involves operating vacuum trucks for AST cleaning projects. Responsibilities include driving the truck, operating the vacuum equipment, and ensuring proper disposal of waste materials while adhering to safety protocols.",
   },
 ];
 
@@ -271,23 +274,23 @@ const toggleForm = () => {
 
 // Validation schema using Yup
 const schema = yup.object({
-  name: yup.string().required('Name is required'),
+  name: yup.string().required("Name is required"),
   email: yup
     .string()
-    .email('Must be a valid email')
-    .required('Email is required'),
+    .email("Must be a valid email")
+    .required("Email is required"),
   resumeUpload: yup
     .mixed()
-    .required('Please upload a resume')
+    .required("Please upload a resume")
     .test(
-      'fileType',
-      'Unsupported file format. Allowed formats: .pdf, .doc, .docx',
+      "fileType",
+      "Unsupported file format. Allowed formats: .pdf, .doc, .docx",
       (value) => {
         if (!value || !value.type) return false;
         const allowedTypes = [
-          'application/pdf',
-          'application/msword',
-          'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+          "application/pdf",
+          "application/msword",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         ];
         return allowedTypes.includes(value.type);
       }
@@ -300,9 +303,9 @@ const { errors, validate } = useForm({
 });
 
 // Use fields for name, email, and resume upload
-const { value: name } = useField('name');
-const { value: email } = useField('email');
-const { value: resumeUpload } = useField('resumeUpload');
+const { value: name } = useField("name");
+const { value: email } = useField("email");
+const { value: resumeUpload } = useField("resumeUpload");
 
 // Function to handle file change event
 const handleFileChange = (event) => {
