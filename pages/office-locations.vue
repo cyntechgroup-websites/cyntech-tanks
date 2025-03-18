@@ -161,8 +161,8 @@
           <div class="mb-6 md:mb-0 ml-2.5">
             <h4 class="font-semibold text-[#1b3664] mb-2">Address</h4>
             <p class="text-gray-500">
-              6401-50 Ave <br />
-              Bonnyville, AB T9N 2L9
+              6230 49 Ave <br />
+              Bonnyville, AB T9N 2M5
             </p>
           </div>
 

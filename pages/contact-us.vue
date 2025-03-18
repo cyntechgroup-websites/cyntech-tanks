@@ -59,7 +59,10 @@
             <div class="flex flex-col">
               <p class="text-gray-700 flex items-center">
                 Travis Fedirko
-                <button class="flex" @click="copyEmail('travis.fedirko@cyntechgroup.com', 4)">
+                <button
+                  class="flex"
+                  @click="copyEmail('travis.fedirko@cyntechgroup.com', 4)"
+                >
                   <div v-if="!copiedEmails[4]">
                     <Icon
                       icon="lucide:mail"
@@ -71,14 +74,21 @@
                       icon="lucide:mail"
                       class="w-4 h-4 ml-2 text-[#fdc70c] cursor-pointer"
                     />
-                    <p class="absolute bg-[#fdc70c] p-1 no-underline rounded-md translate-x-8 -translate-y-6">Copied!</p>
+                    <p
+                      class="absolute bg-[#fdc70c] p-1 no-underline rounded-md translate-x-8 -translate-y-6"
+                    >
+                      Copied!
+                    </p>
                   </div>
                 </button>
               </p>
               <p class="text-gray-500 mb-4">Operations Manager</p>
               <p class="text-gray-700 flex items-center">
                 Rick White
-                <button class="flex" @click="copyEmail('rick.white@cyntechgroup.com', 5)">
+                <button
+                  class="flex"
+                  @click="copyEmail('rick.white@cyntechgroup.com', 5)"
+                >
                   <div v-if="!copiedEmails[5]">
                     <Icon
                       icon="lucide:mail"
@@ -90,7 +100,11 @@
                       icon="lucide:mail"
                       class="w-4 h-4 ml-2 text-[#fdc70c] cursor-pointer"
                     />
-                    <p class="absolute bg-[#fdc70c] p-1 no-underline rounded-md translate-x-8 -translate-y-6">Copied!</p>
+                    <p
+                      class="absolute bg-[#fdc70c] p-1 no-underline rounded-md translate-x-8 -translate-y-6"
+                    >
+                      Copied!
+                    </p>
                   </div>
                 </button>
               </p>
@@ -144,8 +158,8 @@
           <div class="mb-6 md:mb-0 ml-2.5">
             <h4 class="font-semibold text-[#1b3664] mb-2">Address</h4>
             <p class="text-gray-500">
-              6401-50 Ave <br />
-              Bonnyville, AB T9N 2L9
+              6230 49 Ave <br />
+              Bonnyville, AB T9N 2M5
             </p>
           </div>
 
