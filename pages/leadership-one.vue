@@ -23,12 +23,12 @@
           Operations of the business.
         </p>
         <p class="text-gray-500 mb-6">
-          Rick is a Professional Engineer with over 30 years of experience in
-          the Oil & Gas and Petrochemical industries. He has held numerous
-          positions in Development, Engineering, Projects and Operations
-          throughout Western Canada, the Middle East and South America. Rick's
-          experience and leadership will drive Responsible and Sustainable
-          growth delivering Safe and Value focused projects for our clients.
+          Rick is a Mechanical Engineer with over 30 years of experience in the
+          Oil & Gas and Petrochemical industries. He has held numerous positions
+          in Development, Engineering, Projects and Operations throughout
+          Western Canada, the Middle East and South America. Rick's experience
+          and leadership will drive Responsible and Sustainable growth
+          delivering Safe and Value focused projects for our clients.
         </p>
         <p class="text-gray-500 mb-6">
           Rick enjoys family time, travelling, baseball and the Calgary
